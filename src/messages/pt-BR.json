@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "title": "CosmoRemote AI Control",
+    "description": "Gerencie Claude Code e Codex de qualquer lugar com streaming em tempo real, pareamento remoto e controle de múltiplas sessões."
+  },
+  "nav": {
+    "brand": "CosmoRemote",
+    "links": {
+      "features": "Recursos",
+      "screenshots": "Capturas",
+      "pricing": "Planos",
+      "downloads": "Downloads",
+      "faq": "FAQ"
+    }
+  },
+  "hero": {
+    "eyebrow": "Controle remoto para fluxos com agentes",
+    "title": "Gerencie Claude Code e Codex sem perder o contexto.",
+    "description": "O CosmoRemote mantém suas sessões, projetos e saídas sincronizados entre dispositivos com um workspace remoto polido e rápido.",
+    "primaryCta": "Ver downloads",
+    "secondaryCta": "Explorar capturas",
+    "note": "Pré-lançamento. Apps para iOS, Android e macOS estão chegando.",
+    "metrics": [
+      { "value": "1 linha", "label": "para instalar o bridge daemon" },
+      { "value": "QR", "label": "para parear na rede local" },
+      { "value": "Ao vivo", "label": "streaming token a token" }
+    ]
+  },
+  "features": {
+    "eyebrow": "Bento grid",
+    "title": "Um centro de comando mais calmo para trabalhar com múltiplas sessões",
+    "description": "Tudo foi desenhado para reduzir troca de contexto: iniciar rápido, parear localmente, acompanhar histórico por projeto e copiar o que você precisa em um toque.",
+    "items": [
+      {
+        "icon": "spark",
+        "title": "Instalação em uma linha",
+        "description": "Instale o bridge daemon rapidamente e mantenha o setup enxuto no macOS, Windows ou Linux."
+      },
+      {
+        "icon": "stream",
+        "title": "cosmoremote start",
+        "description": "Detecta Claude Code e Codex, sobe o servidor WebSocket local e mostra o QR code no terminal."
+      },
+      {
+        "icon": "qr",
+        "title": "Pareamento por QR code",
+        "description": "Escaneie uma vez, conecte na rede local e leve a sessão do Mac para o celular."
+      },
+      {
+        "icon": "folder",
+        "title": "Seletor de diretório",
+        "description": "Alterne entre projetos salvos e mantenha o contexto certo visível no composer."
+      },
+      {
+        "icon": "code",
+        "title": "Seletor de CLI",
+        "description": "Escolha Claude Code ou Codex por sessão antes de enviar a próxima instrução."
+      },
+      {
+        "icon": "copy",
+        "title": "Copiar saída",
+        "description": "Copie a sessão inteira ou um bloco de código sem procurar nos logs."
+      },
+      {
+        "icon": "status",
+        "title": "Status de conexão",
+        "description": "Saiba quando está local, remoto ou desconectado com um badge claro e estado em tempo real."
+      },
+      {
+        "icon": "stream",
+        "title": "Streaming em tempo real",
+        "description": "A saída chega token a token via WebSocket com auto-scroll e sem polling."
+      }
+    ]
+  },
+  "screenshots": {
+    "eyebrow": "Galeria de capturas",
+    "title": "Snapshots do produto que parecem a app real",
+    "description": "Como o repositório ainda não traz capturas de produção, estes painéis mostram os padrões reais da interface: streaming, pareamento, histórico e controle de sessões.",
+    "items": [
+      {
+        "title": "Stream ao vivo",
+        "caption": "Uma visão focada do terminal para saída ativa e estado da conexão.",
+        "variant": "stream"
+      },
+      {
+        "title": "Visão de sessões",
+        "caption": "Acompanhe sessões ativas, remotas e offline em um só lugar.",
+        "variant": "sessions"
+      },
+      {
+        "title": "Pareamento QR",
+        "caption": "Escaneie uma vez para conectar o bridge local sem fricção extra.",
+        "variant": "pairing"
+      },
+      {
+        "title": "Histórico de threads",
+        "caption": "Restaure o contexto do histórico quando voltar depois.",
+        "variant": "history"
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Planos",
+    "title": "Grátis para começar, Pro quando precisar de mais",
+    "description": "Mostre a estrutura completa de planos desde já. A versão grátis cobre o básico do fluxo. O Pro libera múltiplas sessões, mensagens ilimitadas e vários Macs.",
+    "saveLabel": "Economize 16%",
+    "freeLabel": "Grátis",
+    "monthlyLabel": "Pro Mensal",
+    "yearlyLabel": "Pro Anual",
+    "lifetimeLabel": "Vitalício",
+    "monthlyCadence": "/ mês",
+    "yearlyCadence": "/ ano",
+    "lifetimeCadence": "a definir",
+    "freeCadence": "para sempre",
+    "cards": {
+      "freeCta": "Começar grátis",
+      "cta": "Assinar Pro",
+      "waitlist": "Entrar na lista",
+      "comingSoon": "Planejado para depois",
+      "free": [
+        "Instalação em uma linha",
+        "cosmoremote start",
+        "Pareamento por QR code",
+        "Seletor de CLI",
+        "Seletor de diretório",
+        "Streaming em tempo real",
+        "Destaque de sintaxe",
+        "Copiar saída",
+        "Indicador de conexão",
+        "Auth com email e senha",
+        "Relay remoto",
+        "Histórico de sessão",
+        "Histórico offline",
+        "Lista de threads",
+        "Limite diário de mensagens",
+        "Prompt de upgrade",
+        "App iOS",
+        "App Android"
+      ],
+      "monthly": [
+        "Sessões paralelas",
+        "Mensagens ilimitadas/dia",
+        "Vários Macs",
+        "Assinatura Pro mensal",
+        "Restaurar compras"
+      ],
+      "yearly": [
+        "Todos os recursos Pro mensais",
+        "Melhor valor para uso diário",
+        "Prioridade para futuros recursos Pro",
+        "Restaurar compras"
+      ],
+      "lifetime": [
+        "Desbloqueio único planejado após o lançamento",
+        "A disponibilidade futura será anunciada",
+        "Sem preço inventado antes dele existir"
+      ]
+    }
+  },
+  "downloads": {
+    "eyebrow": "Downloads",
+    "title": "Apps para cada superfície",
+    "description": "O app ainda não foi lançado, então os surfactes de loja ficam claramente marcados como em breve. Isso mantém o marketing honesto e ainda mostra a direção do produto.",
+    "comingSoon": "Em breve",
+    "cta": "Quero ser avisado",
+    "cards": [
+      {
+        "platform": "ios",
+        "title": "iOS",
+        "status": "Em breve",
+        "note": "Veja sessões, leia o histórico e acompanhe a conexão pelo celular."
+      },
+      {
+        "platform": "android",
+        "title": "Android",
+        "status": "Em breve",
+        "note": "Pareie com o mesmo bridge local e continue sincronizado em movimento."
+      },
+      {
+        "platform": "macos",
+        "title": "macOS",
+        "status": "Em breve",
+        "note": "Use a superfície nativa de desktop assim que a app estiver pronta."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "O que as pessoas precisam saber antes do lançamento",
+    "description": "Responda às perguntas práticas agora para manter a narrativa clara e honesta.",
+    "questions": [
+      {
+        "question": "O CosmoRemote já está no ar?",
+        "answer": "Não. A landing e a narrativa do produto estão prontas, mas os apps para iOS, Android e macOS ainda aparecem como em breve."
+      },
+      {
+        "question": "Como funciona o pareamento?",
+        "answer": "Rode o bridge localmente, escaneie o QR code e conecte à sessão do Mac pela rede local com token de autenticação."
+      },
+      {
+        "question": "Posso escolher Claude Code ou Codex por sessão?",
+        "answer": "Sim. O seletor de CLI faz parte da experiência para você decidir qual agente vai responder antes de enviar o trabalho."
+      },
+      {
+        "question": "O CosmoRemote tem histórico offline?",
+        "answer": "Sim. Histórico de sessão e histórico offline fazem parte da camada gratuita para você retomar a thread depois."
+      },
+      {
+        "question": "O que o Pro desbloqueia?",
+        "answer": "O Pro foca nos fluxos de maior impacto: sessões paralelas, mensagens ilimitadas e múltiplas máquinas Mac."
+      },
+      {
+        "question": "O plano anual vale mais a pena?",
+        "answer": "Sim. O plano anual é destacado como melhor valor e economiza 16% em relação ao pagamento mensal durante um ano."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "CosmoRemote",
+    "tagline": "Seus agentes, ao seu alcance. Feito para quem vive entre saída de terminal, threads e controle remoto.",
+    "links": {
+      "features": "Recursos",
+      "screenshots": "Capturas",
+      "pricing": "Planos",
+      "downloads": "Downloads",
+      "faq": "FAQ"
+    },
+    "legal": "Lançamento honesto"
+  }
+}
