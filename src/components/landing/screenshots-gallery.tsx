@@ -1,5 +1,9 @@
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { SectionShell } from "@/components/landing/section-shell";
-import { MockScreen } from "@/components/landing/mock-screen";
+import { getGalleryScreenshots } from "@/lib/screenshots";
 import type { Locale } from "@/lib/i18n";
 
 export function ScreenshotsGallery({
@@ -14,6 +18,23 @@ export function ScreenshotsGallery({
     items: Array<{ title: string; caption: string; variant: string }>;
   };
 }) {
+  const shots = getGalleryScreenshots(locale);
+
+  if (shots.length === 0) {
+    return null;
+  }
+
+  const cards = shots.map((shot, index) => {
+    const copy = content.items[index] ?? content.items[0];
+
+    return {
+      ...shot,
+      title: copy?.title ?? "CosmoRemote",
+      caption: copy?.caption ?? "",
+      key: `${shot.src}-${index}`,
+    };
+  });
+
   return (
     <SectionShell
       id="screenshots"
@@ -21,22 +42,31 @@ export function ScreenshotsGallery({
       title={content.title}
       description={content.description}
     >
-      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-        {content.items.map((item) => (
-          <figure
-            key={item.title}
-            className="group overflow-hidden rounded-[30px] border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition hover:-translate-y-1 hover:border-white/18"
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        {cards.map((card, index) => (
+          <motion.figure
+            key={card.key}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ delay: 0.08 * index, duration: 0.4 }}
+            className="overflow-hidden rounded-3xl border border-white/14 bg-white/8 shadow-[var(--shadow-card)]"
           >
-            <MockScreen
-              locale={locale}
-              variant={item.variant as "stream" | "sessions" | "pairing" | "history" | "composer"}
-              className="min-h-[18rem] transition duration-300 group-hover:scale-[1.01]"
-            />
-            <figcaption className="p-1 pt-4">
-              <h3 className="text-base font-semibold text-white">{item.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-white/60">{item.caption}</p>
+            <div className="border-b border-white/10 p-2">
+              <Image
+                src={card.src}
+                alt={card.alt}
+                width={1800}
+                height={2200}
+                className="h-auto w-full rounded-2xl"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+            </div>
+            <figcaption className="p-4 sm:p-5">
+              <h3 className="text-xl font-semibold text-white">{card.title}</h3>
+              <p className="mt-2 max-w-prose text-base leading-7 text-white/72">{card.caption}</p>
             </figcaption>
-          </figure>
+          </motion.figure>
         ))}
       </div>
     </SectionShell>

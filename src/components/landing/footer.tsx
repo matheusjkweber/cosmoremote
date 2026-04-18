@@ -1,19 +1,32 @@
-import { locales, type Locale } from "@/lib/i18n";
-import { tr } from "@/lib/copy";
+import Link from "next/link";
+import type { Locale } from "@/lib/i18n";
+
+type FooterContent = {
+  brand: string;
+  tagline: string;
+  links: {
+    features: string;
+    screenshots: string;
+    pricing: string;
+    downloads: string;
+    faq: string;
+  };
+  legal: {
+    rights: string;
+    honesty: string;
+  };
+};
+
+const localeHref = (locale: Locale) => (locale === "en" ? "/" : `/${locale}`);
 
 export function Footer({
   locale,
   content,
 }: {
   locale: Locale;
-  content: {
-    brand: string;
-    tagline: string;
-    links: { features: string; screenshots: string; pricing: string; downloads: string; faq: string };
-    legal: string;
-  };
+  content: FooterContent;
 }) {
-  const items = [
+  const links = [
     ["features", content.links.features],
     ["screenshots", content.links.screenshots],
     ["pricing", content.links.pricing],
@@ -22,50 +35,37 @@ export function Footer({
   ] as const;
 
   return (
-    <footer className="border-t border-white/8 bg-black/30">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+    <footer className="border-t border-white/10 bg-[#202020]/80">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 lg:px-8">
         <div>
-          <p className="text-2xl font-semibold tracking-tight text-white">{content.brand}</p>
-          <p className="mt-4 max-w-xl text-sm leading-7 text-white/60">{content.tagline}</p>
+          <p className="text-2xl font-semibold text-white">{content.brand}</p>
+          <p className="mt-4 max-w-prose text-base leading-7 text-white/72">{content.tagline}</p>
         </div>
-        <div className="grid gap-8 sm:grid-cols-2">
+
+        <div className="grid grid-cols-2 gap-8">
           <div>
-            <p className="text-xs uppercase tracking-[0.28em] text-white/36">
-              {tr(locale, {
-                en: "Navigate",
-                "pt-BR": "Navegar",
-                es: "Navegar",
-              })}
-            </p>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">Links</p>
             <ul className="mt-4 space-y-3">
-              {items.map(([id, label]) => (
+              {links.map(([id, label]) => (
                 <li key={id}>
-                  <a href={`#${id}`} className="text-sm text-white/58 transition hover:text-white">
+                  <a href={`#${id}`} className="text-sm text-white/78 transition hover:text-white">
                     {label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
+
           <div>
-            <p className="text-xs uppercase tracking-[0.28em] text-white/36">{content.legal}</p>
-            <div className="mt-4 space-y-3 text-sm text-white/56">
-              <p>{locale === "pt-BR" ? "App em pré-lançamento." : locale === "es" ? "Aplicación en pre-lanzamiento." : "Pre-launch application."}</p>
-              <p>
-                {locale === "pt-BR"
-                  ? "Sem números falsos, sem reviews inventadas."
-                  : locale === "es"
-                    ? "Sin números falsos ni reseñas inventadas."
-                    : "No fake installs, no invented reviews."}
-              </p>
-            </div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">Legal</p>
+            <p className="mt-4 text-sm text-white/78">{content.legal.rights}</p>
+            <p className="mt-2 text-sm text-white/62">{content.legal.honesty}</p>
+            <p className="mt-4 text-sm text-white/72">
+              <Link href={localeHref(locale)} className="underline underline-offset-4">
+                {content.brand}
+              </Link>
+            </p>
           </div>
-        </div>
-      </div>
-      <div className="border-t border-white/8 py-5">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-xs text-white/42 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} CosmoRemote</p>
-          <p className="tracking-[0.18em] uppercase">{locales.join(" / ")}</p>
         </div>
       </div>
     </footer>

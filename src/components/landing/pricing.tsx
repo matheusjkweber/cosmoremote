@@ -1,100 +1,60 @@
+"use client";
+
+import { useMemo } from "react";
+import { motion } from "framer-motion";
+import { Check, Sparkles } from "lucide-react";
 import { SectionShell } from "@/components/landing/section-shell";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/cn";
+import type { Locale } from "@/lib/i18n";
+import { formatLandingCurrency, getLandingPricing, getLandingSavingsPercent } from "@/lib/landing-data";
 
-type Plan = {
-  name: string;
-  price: string;
-  cadence: string;
+type PricingContent = {
+  eyebrow: string;
+  title: string;
   description: string;
-  featured?: boolean;
-  badge?: string;
-  cta: string;
-  bullets: string[];
+  monthlyLabel: string;
+  yearlyLabel: string;
+  monthlyValue: number;
+  yearlyValue: number;
+  freeLabel: string;
+  freePrice: string;
+  cadenceMonthly: string;
+  cadenceYearly: string;
+  cadenceFree: string;
+  saveTemplate: string;
+  toggleMonthly: string;
+  toggleYearly: string;
+  ctaFree: string;
+  ctaPro: string;
+  monthlyDescription: string;
+  yearlyDescription: string;
+  yearlyHighlight: string;
+  yearlyComparisonTemplate: string;
+  cards: {
+    free: string[];
+    premium: string[];
+  };
 };
 
-export function Pricing({
-  content,
-  locale,
-}: {
-  locale: string;
-  content: {
-    eyebrow: string;
-    title: string;
-    description: string;
-    saveLabel: string;
-    freeLabel: string;
-    monthlyLabel: string;
-    yearlyLabel: string;
-    lifetimeLabel: string;
-    monthlyCadence: string;
-    yearlyCadence: string;
-    lifetimeCadence: string;
-    freeCadence: string;
-    cards: {
-      free: string[];
-      monthly: string[];
-      yearly: string[];
-      lifetime: string[];
-      cta: string;
-      waitlist: string;
-      comingSoon: string;
-      freeCta: string;
-    };
-  };
-}) {
-  const plans: Plan[] = [
-    {
-      name: content.freeLabel,
-      price: "R$0",
-      cadence: content.freeCadence,
-      description: locale === "pt-BR" ? "Ideal para começar" : locale === "es" ? "Perfecto para empezar" : "Best for getting started",
-      cta: content.cards.freeCta,
-      bullets: content.cards.free,
-    },
-    {
-      name: content.monthlyLabel,
-      price: "R$19.90",
-      cadence: content.monthlyCadence,
-      description:
-        locale === "pt-BR"
-          ? "Acesso Pro mensal para uso flexível"
-          : locale === "es"
-            ? "Acceso Pro mensual para uso flexible"
-            : "Monthly Pro access for flexible use",
-      cta: content.cards.cta,
-      bullets: content.cards.monthly,
-    },
-    {
-      name: content.yearlyLabel,
-      price: "R$199.90",
-      cadence: content.yearlyCadence,
-      description:
-        locale === "pt-BR"
-          ? "Melhor valor para quem usa todos os dias"
-          : locale === "es"
-            ? "La mejor opción para uso diario"
-            : "Best value for daily users",
-      featured: true,
-      badge: content.saveLabel,
-      cta: content.cards.cta,
-      bullets: content.cards.yearly,
-    },
-    {
-      name: content.lifetimeLabel,
-      price: "TBA",
-      cadence: content.lifetimeCadence,
-      description:
-        locale === "pt-BR"
-          ? "Plano vitalício planejado para depois do lançamento"
-          : locale === "es"
-            ? "Plan vitalicio previsto para después del lanzamiento"
-            : "Lifetime plan planned for after launch",
-      cta: content.cards.waitlist,
-      bullets: content.cards.lifetime,
-    },
-  ];
+export function Pricing({ locale, content }: { locale: Locale; content: PricingContent }) {
+  const pricing = getLandingPricing(content);
+
+  const savePercent = useMemo(
+    () => getLandingSavingsPercent(pricing.monthly, pricing.yearly) ?? 0,
+    [pricing.monthly, pricing.yearly],
+  );
+
+  const monthlyPriceLabel =
+    pricing.monthly !== null ? formatLandingCurrency(pricing.monthly, pricing.currency, locale) : content.freePrice;
+  const yearlyPriceLabel =
+    pricing.yearly !== null ? formatLandingCurrency(pricing.yearly, pricing.currency, locale) : content.freePrice;
+  const yearlyComparison =
+    pricing.monthly !== null && pricing.yearly !== null
+      ? content.yearlyComparisonTemplate
+          .replace("{monthlyTotal}", formatLandingCurrency(pricing.monthly * 12, pricing.currency, locale))
+          .replace("{yearly}", yearlyPriceLabel)
+      : null;
 
   return (
     <SectionShell
@@ -103,47 +63,87 @@ export function Pricing({
       title={content.title}
       description={content.description}
     >
-      <div className="grid gap-5 xl:grid-cols-4">
-        {plans.map((plan) => (
-          <article
-            key={plan.name}
-            className={cn(
-              "relative rounded-[30px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.035))] p-6 shadow-[0_20px_50px_rgba(0,0,0,0.16)] backdrop-blur-sm transition hover:-translate-y-1 hover:border-white/18",
-              plan.featured && "border-cyan-300/28 bg-[linear-gradient(180deg,rgba(52,152,219,0.17),rgba(255,255,255,0.05))] ring-1 ring-cyan-300/20 xl:scale-[1.03]",
-            )}
-          >
-            {plan.badge && (
-              <Badge className="absolute right-5 top-5 border-cyan-300/20 bg-cyan-300/10 text-cyan-100">
-                {plan.badge}
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+        <article className="rounded-3xl border border-white/14 bg-white/8 p-6 shadow-[var(--shadow-card)]">
+          <p className="text-lg font-semibold text-white">{content.freeLabel}</p>
+          <div className="mt-4 flex items-end gap-2">
+            <p className="text-4xl font-semibold text-white">{content.freePrice}</p>
+            <span className="pb-1 text-sm text-white/70">{content.cadenceFree}</span>
+          </div>
+          <ul className="mt-5 space-y-3">
+            {content.cards.free.map((item) => (
+              <li key={item} className="flex items-start gap-2 text-sm text-white/78">
+                <Check className="mt-0.5 size-4 shrink-0 text-[#2ecc71]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <Button href="#downloads" variant="outline" className="mt-6 h-11 w-full text-sm">
+            {content.ctaFree}
+          </Button>
+        </article>
+
+        <article className="rounded-3xl border border-white/14 bg-white/8 p-6 shadow-[var(--shadow-card)]">
+          <p className="text-lg font-semibold text-white">{content.monthlyLabel}</p>
+          <div className="mt-4 flex items-end gap-2">
+            <p className="text-4xl font-semibold text-white">{monthlyPriceLabel}</p>
+            <span className="pb-1 text-sm text-white/70">{content.cadenceMonthly}</span>
+          </div>
+          <p className="mt-3 text-sm leading-6 text-white/72">{content.monthlyDescription}</p>
+          <ul className="mt-5 space-y-3">
+            {content.cards.premium.map((item) => (
+              <li key={item} className="flex items-start gap-2 text-sm text-white/78">
+                <Check className="mt-0.5 size-4 shrink-0 text-[#2ecc71]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <Button href="#downloads" variant="outline" className="mt-6 h-11 w-full text-sm">
+            {content.ctaPro}
+          </Button>
+        </article>
+
+        <motion.article
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35 }}
+          className="rounded-3xl border border-[#3498db]/50 bg-[linear-gradient(180deg,rgba(52,152,219,0.24),rgba(155,89,182,0.22),rgba(255,255,255,0.08))] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.3)]"
+        >
+          <div className="flex items-center justify-between gap-3">
+            <p className="text-lg font-semibold text-white">{content.yearlyLabel}</p>
+            {savePercent > 0 ? (
+              <Badge className="border-[#2ecc71]/35 bg-[#2ecc71]/15 text-[#dbffeb]">
+                <Sparkles className="size-3.5" />
+                {content.saveTemplate.replace("{percent}", String(savePercent))}
               </Badge>
-            )}
-            <div className="pr-20">
-              <h3 className="text-lg font-semibold text-white">{plan.name}</h3>
-              <p className="mt-2 text-sm leading-7 text-white/60">{plan.description}</p>
-            </div>
-            <div className="mt-6 flex items-end gap-2">
-              <p className="text-4xl font-semibold tracking-[-0.04em] text-white">{plan.price}</p>
-              <span className="pb-1 text-sm text-white/48">{plan.cadence}</span>
-            </div>
-            <ul className="mt-6 space-y-3 text-sm leading-6 text-white/70">
-              {plan.bullets.map((bullet) => (
-                <li key={bullet} className="flex gap-3">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--secondary)] shadow-[0_0_14px_rgba(46,204,113,0.8)]" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-            <Button
-              variant={plan.featured ? "default" : "secondary"}
-              className="mt-8 w-full"
-              href="#downloads"
-            >
-              {plan.cta}
-            </Button>
-          </article>
-        ))}
+            ) : null}
+          </div>
+
+          <div className="mt-4 flex items-end gap-2">
+            <p className="text-4xl font-semibold text-white">{yearlyPriceLabel}</p>
+            <span className="pb-1 text-sm text-white/74">{content.cadenceYearly}</span>
+          </div>
+
+          <p className="mt-3 text-sm leading-6 text-white/82">{content.yearlyDescription}</p>
+
+          {yearlyComparison ? (
+            <p className="mt-3 text-xs leading-5 text-white/60">{yearlyComparison}</p>
+          ) : null}
+
+          <ul className="mt-5 space-y-3">
+            {content.cards.premium.map((item) => (
+              <li key={item} className="flex items-start gap-2 text-sm text-white/86">
+                <Check className="mt-0.5 size-4 shrink-0 text-[#2ecc71]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <Button href="#downloads" className="mt-6 h-11 w-full text-sm">
+            {content.ctaPro}
+          </Button>
+        </motion.article>
       </div>
     </SectionShell>
   );
 }
-

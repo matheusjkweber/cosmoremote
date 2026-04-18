@@ -1,30 +1,35 @@
-import { SectionShell } from "@/components/landing/section-shell";
-import {
-  CodeIcon,
-  CopyIcon,
-  FolderIcon,
-  QrIcon,
-  SparkIcon,
-  StatusIcon,
-  StreamIcon,
-} from "@/components/landing/icons";
-import { cn } from "@/lib/cn";
+"use client";
 
-const iconMap = {
-  spark: SparkIcon,
-  qr: QrIcon,
-  stream: StreamIcon,
-  folder: FolderIcon,
-  code: CodeIcon,
-  copy: CopyIcon,
-  status: StatusIcon,
-} as const;
+import { motion } from "framer-motion";
+import {
+  Bolt,
+  Cable,
+  Copy,
+  FolderCog,
+  QrCode,
+  ServerCog,
+  SquareTerminal,
+  Wifi,
+  type LucideIcon,
+} from "lucide-react";
+import { SectionShell } from "@/components/landing/section-shell";
+import { cn } from "@/lib/utils";
 
 type FeatureItem = {
   title: string;
   description: string;
   icon: string;
-  span?: string;
+};
+
+const iconMap: Record<string, LucideIcon> = {
+  spark: Bolt,
+  stream: Cable,
+  qr: QrCode,
+  code: SquareTerminal,
+  folder: FolderCog,
+  copy: Copy,
+  status: Wifi,
+  server: ServerCog,
 };
 
 export function FeatureBento({
@@ -44,34 +49,29 @@ export function FeatureBento({
       title={content.title}
       description={content.description}
     >
-      <div className="grid gap-5 lg:grid-cols-12">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {content.items.map((item, index) => {
-          const Icon = iconMap[item.icon as keyof typeof iconMap] ?? SparkIcon;
+          const Icon = iconMap[item.icon] ?? Bolt;
+          const wide = index === 0 || index === 5;
+
           return (
-            <article
+            <motion.article
               key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-10%" }}
+              transition={{ delay: index * 0.05, duration: 0.35 }}
               className={cn(
-                "group relative overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1 hover:border-white/18",
-                item.span ?? "lg:col-span-4",
-                index === 0 ? "lg:col-span-5 lg:row-span-2 min-h-[18rem]" : "",
-                index === 1 ? "lg:col-span-7" : "",
-                index === 2 ? "lg:col-span-3" : "",
-                index === 3 ? "lg:col-span-4" : "",
-                index === 4 ? "lg:col-span-5" : "",
-                index === 5 ? "lg:col-span-3" : "",
-                index === 6 ? "lg:col-span-7" : "",
-                index === 7 ? "lg:col-span-5" : "",
+                "group rounded-3xl border border-white/14 bg-[linear-gradient(160deg,rgba(255,255,255,0.14),rgba(255,255,255,0.05))] p-5 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-1 hover:border-white/30",
+                wide && "sm:col-span-2 lg:col-span-2",
               )}
             >
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(52,152,219,0.18),transparent_34%),radial-gradient(circle_at_bottom_left,rgba(46,204,113,0.08),transparent_32%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              <div className="relative">
-                <div className="grid h-11 w-11 place-items-center rounded-2xl border border-white/10 bg-white/6 text-white">
-                  <Icon className="h-5 w-5" />
-                </div>
-                <h3 className="mt-5 text-xl font-semibold text-white">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-white/64">{item.description}</p>
+              <div className="mb-4 grid size-12 place-items-center rounded-2xl border border-white/20 bg-[#3498db]/22 text-white transition group-hover:bg-[#9b59b6]/28">
+                <Icon className="size-5" strokeWidth={2} />
               </div>
-            </article>
+              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+              <p className="mt-3 max-w-prose text-base leading-7 text-white/74">{item.description}</p>
+            </motion.article>
           );
         })}
       </div>

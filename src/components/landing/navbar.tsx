@@ -1,19 +1,36 @@
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/cn";
-import { getLocaleLabel, locales, type Locale } from "@/lib/i18n";
-import { tr } from "@/lib/copy";
+"use client";
 
-export function Navbar({
-  locale,
-  labels,
-}: {
+import { useState } from "react";
+import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { BrandMark } from "@/components/landing/icons";
+import { getLocaleLabel, locales, type Locale } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
+
+type NavbarProps = {
   locale: Locale;
   labels: {
     brand: string;
-    links: { features: string; screenshots: string; pricing: string; downloads: string; faq: string };
+    tagline: string;
+    menuLabel: string;
+    prelaunch: string;
+    links: {
+      features: string;
+      screenshots: string;
+      pricing: string;
+      downloads: string;
+      faq: string;
+    };
   };
-}) {
+};
+
+const localeHref = (code: Locale) => (code === "en" ? "/" : `/${code}`);
+
+export function Navbar({ locale, labels }: NavbarProps) {
+  const [open, setOpen] = useState(false);
+
   const navItems = [
     ["features", labels.links.features],
     ["screenshots", labels.links.screenshots],
@@ -23,75 +40,84 @@ export function Navbar({
   ] as const;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/8 bg-[rgba(5,8,14,0.72)] backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-        <a href={`/${locale}`} className="group flex items-center gap-3">
-          <div className="grid h-10 w-10 place-items-center rounded-2xl border border-white/12 bg-[linear-gradient(135deg,rgba(52,152,219,0.24),rgba(46,204,113,0.14))] shadow-[0_16px_32px_rgba(0,0,0,0.24)]">
-            <span className="text-sm font-bold tracking-[0.22em] text-white">CR</span>
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-white">{labels.brand}</p>
-            <p className="text-[11px] text-white/50">
-              {tr(locale, {
-                en: "Remote control for agent workflows",
-                "pt-BR": "Controle remoto para fluxos com agentes",
-                es: "Control remoto para flujos con agentes",
-              })}
-            </p>
-          </div>
-        </a>
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#202020]/85 backdrop-blur-xl">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex min-h-20 items-center justify-between gap-3 py-3">
+          <Link href={localeHref(locale)} className="flex min-w-0 items-center gap-3">
+            <BrandMark className="size-11 shrink-0 rounded-xl" />
+            <div className="min-w-0">
+              <p className="truncate text-sm font-semibold text-white">{labels.brand}</p>
+              <p className="truncate text-xs text-white/70">{labels.tagline}</p>
+            </div>
+          </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {navItems.map(([id, label]) => (
-            <a
-              key={id}
-              href={`#${id}`}
-              className="text-sm text-white/58 transition hover:text-white"
-            >
-              {label}
-            </a>
-          ))}
-        </nav>
+          <nav className="hidden items-center gap-5 lg:flex">
+            {navItems.map(([id, label]) => (
+              <a key={id} href={`#${id}`} className="text-sm text-white/80 transition hover:text-white">
+                {label}
+              </a>
+            ))}
+          </nav>
 
-        <div className="flex items-center gap-3">
-          <LocaleSwitcher locale={locale} />
-          <Badge className="hidden border-emerald-400/20 bg-emerald-400/10 text-emerald-100 sm:inline-flex">
-            {tr(locale, {
-              en: "Pre-launch",
-              "pt-BR": "Pré-lançamento",
-              es: "Prelanzamiento",
-            })}
-          </Badge>
-          <Button variant="outline" href={`#downloads`} className="hidden sm:inline-flex">
-            {tr(locale, {
-              en: "Get the apps",
-              "pt-BR": "Ver apps",
-              es: "Ver apps",
-            })}
-          </Button>
+          <div className="hidden items-center gap-2 md:flex">
+            <LocaleSwitcher locale={locale} />
+            <Badge className="border-amber-200/30 bg-amber-200/15 text-amber-100">{labels.prelaunch}</Badge>
+          </div>
+
+          <button
+            aria-label={labels.menuLabel}
+            onClick={() => setOpen((prev) => !prev)}
+            className="grid size-11 place-items-center rounded-xl border border-white/15 bg-white/10 text-white md:hidden"
+          >
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
         </div>
       </div>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="border-t border-white/10 bg-[#262626] md:hidden"
+          >
+            <div className="mx-auto w-full max-w-7xl space-y-2 px-4 py-4 sm:px-6">
+              {navItems.map(([id, label]) => (
+                <a
+                  key={id}
+                  href={`#${id}`}
+                  onClick={() => setOpen(false)}
+                  className="block rounded-xl px-3 py-3 text-base text-white/90 hover:bg-white/8"
+                >
+                  {label}
+                </a>
+              ))}
+              <div className="pt-2">
+                <LocaleSwitcher locale={locale} />
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
 
 function LocaleSwitcher({ locale }: { locale: Locale }) {
   return (
-    <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 p-1 backdrop-blur">
+    <div className="inline-flex items-center rounded-full border border-white/15 bg-white/8 p-1">
       {locales.map((code) => (
-        <a
+        <Link
           key={code}
-          href={`/${code}`}
-          aria-label={`Switch language to ${code}`}
+          href={localeHref(code)}
           className={cn(
-            "rounded-full px-3 py-1.5 text-xs font-semibold transition",
-            code === locale
-              ? "bg-white text-slate-950 shadow-sm"
-              : "text-white/55 hover:bg-white/8 hover:text-white",
+            "rounded-full px-3 py-2 text-xs font-semibold transition",
+            code === locale ? "bg-white text-[#242424]" : "text-white/75 hover:bg-white/10 hover:text-white",
           )}
         >
           {getLocaleLabel(code)}
-        </a>
+        </Link>
       ))}
     </div>
   );

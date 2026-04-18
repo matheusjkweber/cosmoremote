@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { defaultLocale, isLocale, locales } from "@/lib/i18n";
+import { defaultLocale, locales, routedLocales } from "@/lib/i18n";
 
 function getPreferredLocale(request: NextRequest) {
   const header = request.headers.get("accept-language");
@@ -46,17 +46,28 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const hasLocale = locales.some(
+  if (pathname === "/en" || pathname.startsWith("/en/")) {
+    const url = request.nextUrl.clone();
+    url.pathname = pathname === "/en" ? "/" : pathname.replace(/^\/en/, "") || "/";
+    return NextResponse.redirect(url);
+  }
+
+  const hasRoutedLocale = routedLocales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`),
   );
 
-  if (hasLocale) {
+  if (hasRoutedLocale || pathname !== "/") {
     return NextResponse.next();
   }
 
   const locale = getPreferredLocale(request);
+
+  if (locale === defaultLocale) {
+    return NextResponse.next();
+  }
+
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
+  url.pathname = `/${locale}`;
 
   return NextResponse.redirect(url);
 }
@@ -64,4 +75,3 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: ["/((?!_next|api|favicon.ico|robots.txt|sitemap.xml|.*\\.).*)"],
 };
-
