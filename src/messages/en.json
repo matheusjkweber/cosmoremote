@@ -7,7 +7,7 @@
     "brand": "CosmoRemote",
     "tagline": "Your agents, in your pocket.",
     "menuLabel": "Open menu",
-    "prelaunch": "Pre-launch",
+    "prelaunch": "Apple Live",
     "links": {
       "features": "Features",
       "screenshots": "Screenshots",
@@ -22,8 +22,8 @@
     "subtitle": "Your coding agents, finally off the desk",
     "description": "Install once, pair with a QR, and watch your agents work live — from the couch, the train, or a coffee shop across town.",
     "secondaryCta": "See the app screens",
-    "note": "App not launched yet. iPhone, iPad, and Android are marked Coming Soon.",
-    "platforms": ["iPhone • Coming Soon", "iPad • Coming Soon", "Android • Coming Soon"],
+    "note": "iPhone and iPad are live now. Android is still marked Coming Soon.",
+    "platforms": ["iPhone • Available", "iPad • Available", "Android • Coming Soon"],
     "metrics": [
       { "value": "1 command", "label": "to install the bridge" },
       { "value": "QR", "label": "one scan and you're in" },
@@ -102,13 +102,14 @@
   "pricing": {
     "eyebrow": "Pricing",
     "title": "Start free. Go Pro when you want more.",
-    "description": "No trials, no gotchas. Free covers your daily flow. Pro removes the ceiling.",
+    "description": "Localized pricing with your first week free on Pro. Free still covers the daily flow, and Pro removes the ceiling.",
     "monthlyLabel": "Pro Monthly",
     "yearlyLabel": "Pro Yearly",
-    "monthlyValue": 4.99,
-    "yearlyValue": 39.99,
+    "monthlyValue": 2.99,
+    "yearlyValue": 29.99,
     "freeLabel": "Free",
     "freePrice": "$0",
+    "trialLabel": "First week free",
     "cadenceMonthly": "/month",
     "cadenceYearly": "/year",
     "cadenceFree": "forever",
@@ -117,8 +118,8 @@
     "toggleYearly": "Yearly",
     "ctaFree": "Start free",
     "ctaPro": "Get Pro",
-    "monthlyDescription": "Pay month to month. Cancel anytime — no lock-in, no surprises.",
-    "yearlyDescription": "Pay once for the whole year and keep every Pro feature for less.",
+    "monthlyDescription": "Start with one week free, then stay month to month. Cancel anytime.",
+    "yearlyDescription": "Start with one week free, then keep every Pro feature for a full year at the best price.",
     "yearlyHighlight": "Best value",
     "yearlyComparisonTemplate": "{monthlyTotal} if billed monthly vs {yearly} on the annual plan.",
     "cards": {
@@ -142,19 +143,21 @@
   "downloads": {
     "eyebrow": "Downloads",
     "title": "Platform rollout status",
-    "description": "Store links aren't live yet, so every platform stays clearly marked Coming Soon.",
-    "comingSoon": "Coming Soon",
+    "description": "iPhone and iPad are already available. Android stays clearly marked Coming Soon until its store release is ready.",
+    "comingSoon": "Rollout in progress",
     "cards": [
       {
         "platform": "iphone",
         "title": "iPhone",
-        "status": "Coming Soon",
+        "status": "Available now",
+        "available": true,
         "note": "Remote control, live streaming, and full history — right in your pocket."
       },
       {
         "platform": "ipad",
         "title": "iPad",
-        "status": "Coming Soon",
+        "status": "Available now",
+        "available": true,
         "note": "More room for sessions, project switching, and copy workflows."
       },
       {
@@ -172,7 +175,7 @@
     "questions": [
       {
         "question": "Is CosmoRemote live yet?",
-        "answer": "Not yet. iPhone, iPad, and Android are still pre-launch and marked Coming Soon until the stores open."
+        "answer": "iPhone and iPad are already available. Android is still marked Coming Soon until its store release is ready."
       },
       {
         "question": "How does local pairing work?",
@@ -208,7 +211,7 @@
     },
     "legal": {
       "rights": "© CosmoRemote. All rights reserved.",
-      "honesty": "Pre-launch page. No fake installs, ratings, or reviews."
+      "honesty": "Real rollout status. No fake installs, ratings, or reviews."
     }
   }
 }

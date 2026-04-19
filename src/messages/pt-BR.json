@@ -7,7 +7,7 @@
     "brand": "CosmoRemote",
     "tagline": "Seus agentes no seu bolso.",
     "menuLabel": "Abrir menu",
-    "prelaunch": "Pré-lançamento",
+    "prelaunch": "Apple já disponível",
     "links": {
       "features": "Recursos",
       "screenshots": "Telas",
@@ -22,8 +22,8 @@
     "subtitle": "Seus agentes de código, fora da mesa de trabalho",
     "description": "Instale uma vez, pareie por QR e acompanhe seus agentes trabalhando ao vivo — do sofá, do trem ou do café do outro lado da cidade.",
     "secondaryCta": "Ver as telas do app",
-    "note": "O app ainda não foi lançado. iPhone, iPad e Android estão marcados como Em breve.",
-    "platforms": ["iPhone • Em breve", "iPad • Em breve", "Android • Em breve"],
+    "note": "iPhone e iPad já estão disponíveis. Android continua marcado como Em breve.",
+    "platforms": ["iPhone • Disponível", "iPad • Disponível", "Android • Em breve"],
     "metrics": [
       { "value": "1 comando", "label": "para instalar o bridge" },
       { "value": "QR", "label": "um scan e você está dentro" },
@@ -102,13 +102,14 @@
   "pricing": {
     "eyebrow": "Planos",
     "title": "Comece grátis. Vá de Pro quando quiser mais.",
-    "description": "Sem teste grátis, sem pegadinha. O grátis cobre seu dia a dia. O Pro tira o teto.",
+    "description": "Preço local por região com primeira semana grátis no Pro. O plano grátis cobre o dia a dia, e o Pro tira o teto.",
     "monthlyLabel": "Pro Mensal",
     "yearlyLabel": "Pro Anual",
-    "monthlyValue": 4.99,
-    "yearlyValue": 39.99,
+    "monthlyValue": 19.9,
+    "yearlyValue": 199.9,
     "freeLabel": "Grátis",
-    "freePrice": "US$0",
+    "freePrice": "R$0",
+    "trialLabel": "Grátis na primeira semana",
     "cadenceMonthly": "/mês",
     "cadenceYearly": "/ano",
     "cadenceFree": "para sempre",
@@ -117,8 +118,8 @@
     "toggleYearly": "Anual",
     "ctaFree": "Começar grátis",
     "ctaPro": "Assinar Pro",
-    "monthlyDescription": "Pague mês a mês e cancele quando quiser. Sem fidelidade, sem pegadinha.",
-    "yearlyDescription": "Pague o ano inteiro uma vez e tenha os mesmos recursos do Pro por menos.",
+    "monthlyDescription": "Comece com uma semana grátis e depois siga no mensal, com cancelamento quando quiser.",
+    "yearlyDescription": "Comece com uma semana grátis e depois fique com todos os recursos Pro por um ano inteiro no melhor preço.",
     "yearlyHighlight": "Melhor custo-benefício",
     "yearlyComparisonTemplate": "{monthlyTotal} se pagasse mensal vs {yearly} no plano anual.",
     "cards": {
@@ -142,19 +143,21 @@
   "downloads": {
     "eyebrow": "Downloads",
     "title": "Status de lançamento por plataforma",
-    "description": "Os links de loja ainda não existem — por enquanto, cada plataforma fica marcada como Em breve.",
-    "comingSoon": "Em breve",
+    "description": "iPhone e iPad já estão disponíveis. Android segue marcado como Em breve até o lançamento na loja.",
+    "comingSoon": "Rollout em andamento",
     "cards": [
       {
         "platform": "iphone",
         "title": "iPhone",
-        "status": "Em breve",
+        "status": "Já disponível",
+        "available": true,
         "note": "Controle remoto, streaming ao vivo e histórico completo — na palma da mão."
       },
       {
         "platform": "ipad",
         "title": "iPad",
-        "status": "Em breve",
+        "status": "Já disponível",
+        "available": true,
         "note": "Mais espaço para sessões, troca de projeto e revisão de saída."
       },
       {
@@ -172,7 +175,7 @@
     "questions": [
       {
         "question": "O CosmoRemote já está disponível?",
-        "answer": "Ainda não. iPhone, iPad e Android seguem em pré-lançamento, marcados como Em breve até as lojas abrirem."
+        "answer": "iPhone e iPad já estão disponíveis. Android continua marcado como Em breve até o lançamento na loja."
       },
       {
         "question": "Como funciona o pareamento local?",
@@ -208,7 +211,7 @@
     },
     "legal": {
       "rights": "© CosmoRemote. Todos os direitos reservados.",
-      "honesty": "Página de pré-lançamento. Sem números nem avaliações inventados."
+      "honesty": "Status real de lançamento. Sem números nem avaliações inventados."
     }
   }
 }

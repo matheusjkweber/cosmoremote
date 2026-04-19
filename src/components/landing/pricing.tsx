@@ -19,6 +19,7 @@ type PricingContent = {
   yearlyValue: number;
   freeLabel: string;
   freePrice: string;
+  trialLabel: string;
   cadenceMonthly: string;
   cadenceYearly: string;
   cadenceFree: string;
@@ -38,7 +39,7 @@ type PricingContent = {
 };
 
 export function Pricing({ locale, content }: { locale: Locale; content: PricingContent }) {
-  const pricing = getLandingPricing(content);
+  const pricing = getLandingPricing(locale, content);
 
   const savePercent = useMemo(
     () => getLandingSavingsPercent(pricing.monthly, pricing.yearly) ?? 0,
@@ -89,6 +90,7 @@ export function Pricing({ locale, content }: { locale: Locale; content: PricingC
             <p className="text-4xl font-semibold text-white">{monthlyPriceLabel}</p>
             <span className="pb-1 text-sm text-white/70">{content.cadenceMonthly}</span>
           </div>
+          <p className="mt-2 text-sm font-medium text-[#d4f1ff]">{content.trialLabel}</p>
           <p className="mt-3 text-sm leading-6 text-white/72">{content.monthlyDescription}</p>
           <ul className="mt-5 space-y-3">
             {content.cards.premium.map((item) => (
@@ -124,6 +126,7 @@ export function Pricing({ locale, content }: { locale: Locale; content: PricingC
             <span className="pb-1 text-sm text-white/74">{content.cadenceYearly}</span>
           </div>
 
+          <p className="mt-2 text-sm font-medium text-[#e7fff0]">{content.trialLabel}</p>
           <p className="mt-3 text-sm leading-6 text-white/82">{content.yearlyDescription}</p>
 
           {yearlyComparison ? (

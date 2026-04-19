@@ -38,13 +38,18 @@ export function formatLandingCurrency(value: number, currency: string, locale: L
   }).format(value);
 }
 
-export function getLandingPricing(fallback: PricingContentFallback) {
+export function getLandingPricing(locale: Locale, fallback: PricingContentFallback) {
+  const localePricing =
+    landingData.pricing?.byLocale?.[locale] ??
+    landingData.pricing?.byLocale?.en ??
+    null;
+
   return {
     source: landingData.pricing?.source ?? "project",
-    currency: landingData.pricing?.currency ?? "USD",
-    monthly: landingData.pricing?.monthly ?? fallback.monthlyValue,
-    yearly: landingData.pricing?.yearly ?? fallback.yearlyValue,
-    lifetime: landingData.pricing?.lifetime ?? null,
+    currency: localePricing?.currency ?? "USD",
+    monthly: localePricing?.monthly ?? fallback.monthlyValue,
+    yearly: localePricing?.yearly ?? fallback.yearlyValue,
+    lifetime: localePricing?.lifetime ?? null,
     freePrice: fallback.freePrice,
   };
 }
@@ -61,7 +66,7 @@ export function getLandingSavingsPercent(monthly: number | null, yearly: number 
 }
 
 export function formatPricingCopy(template: string, locale: Locale, fallback: PricingContentFallback) {
-  const pricing = getLandingPricing(fallback);
+  const pricing = getLandingPricing(locale, fallback);
   const savings = getLandingSavingsPercent(pricing.monthly, pricing.yearly);
   const replacements: Record<string, string> = {
     "{{monthly_price}}":

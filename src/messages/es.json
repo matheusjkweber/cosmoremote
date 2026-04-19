@@ -7,7 +7,7 @@
     "brand": "CosmoRemote",
     "tagline": "Tus agentes, en tu bolsillo.",
     "menuLabel": "Abrir menú",
-    "prelaunch": "Prelanzamiento",
+    "prelaunch": "Apple ya disponible",
     "links": {
       "features": "Funciones",
       "screenshots": "Pantallas",
@@ -22,8 +22,8 @@
     "subtitle": "Tus agentes de código, por fin lejos del escritorio",
     "description": "Instálalo una vez, empareja por QR y mira a tus agentes trabajar en vivo — desde el sofá, el tren o el café del otro lado de la ciudad.",
     "secondaryCta": "Ver las pantallas",
-    "note": "La app aún no está publicada. iPhone, iPad y Android están marcados como Próximamente.",
-    "platforms": ["iPhone • Próximamente", "iPad • Próximamente", "Android • Próximamente"],
+    "note": "iPhone y iPad ya están disponibles. Android sigue marcado como Próximamente.",
+    "platforms": ["iPhone • Disponible", "iPad • Disponible", "Android • Próximamente"],
     "metrics": [
       { "value": "1 comando", "label": "para instalar el bridge" },
       { "value": "QR", "label": "un escaneo y ya estás dentro" },
@@ -102,13 +102,14 @@
   "pricing": {
     "eyebrow": "Precios",
     "title": "Empieza gratis. Pasa a Pro cuando quieras más.",
-    "description": "Sin pruebas, sin sorpresas. Gratis cubre tu día a día. Pro te quita el techo.",
+    "description": "Precio local por región con la primera semana gratis en Pro. Gratis cubre el día a día y Pro te quita el techo.",
     "monthlyLabel": "Pro Mensual",
     "yearlyLabel": "Pro Anual",
-    "monthlyValue": 4.99,
-    "yearlyValue": 39.99,
+    "monthlyValue": 2.99,
+    "yearlyValue": 34.99,
     "freeLabel": "Gratis",
-    "freePrice": "US$0",
+    "freePrice": "0 €",
+    "trialLabel": "Gratis la primera semana",
     "cadenceMonthly": "/mes",
     "cadenceYearly": "/año",
     "cadenceFree": "para siempre",
@@ -117,8 +118,8 @@
     "toggleYearly": "Anual",
     "ctaFree": "Empezar gratis",
     "ctaPro": "Obtener Pro",
-    "monthlyDescription": "Paga mes a mes y cancela cuando quieras. Sin permanencia, sin sorpresas.",
-    "yearlyDescription": "Paga una vez al año y quédate con las mismas funciones Pro por menos.",
+    "monthlyDescription": "Empieza con una semana gratis y luego sigue mes a mes. Cancela cuando quieras.",
+    "yearlyDescription": "Empieza con una semana gratis y luego mantén todas las funciones Pro durante un año entero al mejor precio.",
     "yearlyHighlight": "Mejor precio",
     "yearlyComparisonTemplate": "{monthlyTotal} si pagaras mes a mes vs {yearly} en el plan anual.",
     "cards": {
@@ -142,19 +143,21 @@
   "downloads": {
     "eyebrow": "Descargas",
     "title": "Estado de lanzamiento por plataforma",
-    "description": "Los enlaces de tienda todavía no están disponibles, por eso cada plataforma aparece claramente como Próximamente.",
-    "comingSoon": "Próximamente",
+    "description": "iPhone y iPad ya están disponibles. Android sigue marcado como Próximamente hasta que su lanzamiento en tienda esté listo.",
+    "comingSoon": "Despliegue en curso",
     "cards": [
       {
         "platform": "iphone",
         "title": "iPhone",
-        "status": "Próximamente",
+        "status": "Ya disponible",
+        "available": true,
         "note": "Control remoto, streaming en vivo e historial completo — en la palma de la mano."
       },
       {
         "platform": "ipad",
         "title": "iPad",
-        "status": "Próximamente",
+        "status": "Ya disponible",
+        "available": true,
         "note": "Más espacio para sesiones, cambio de proyecto y revisión de salida."
       },
       {
@@ -172,7 +175,7 @@
     "questions": [
       {
         "question": "¿CosmoRemote ya está disponible?",
-        "answer": "Todavía no. iPhone, iPad y Android siguen en prelanzamiento, marcados como Próximamente hasta que abran las tiendas."
+        "answer": "iPhone y iPad ya están disponibles. Android sigue marcado como Próximamente hasta que su lanzamiento en tienda esté listo."
       },
       {
         "question": "¿Cómo funciona el emparejamiento local?",
@@ -208,7 +211,7 @@
     },
     "legal": {
       "rights": "© CosmoRemote. Todos los derechos reservados.",
-      "honesty": "Página de prelanzamiento. Sin números ni reseñas inventadas."
+      "honesty": "Estado real del lanzamiento. Sin números ni reseñas inventadas."
     }
   }
 }

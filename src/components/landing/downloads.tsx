@@ -12,6 +12,7 @@ type DownloadContent = {
     title: string;
     status: string;
     note: string;
+    available?: boolean;
   }>;
 };
 
@@ -39,7 +40,15 @@ export function Downloads({ content }: { content: DownloadContent }) {
                 <div className="grid size-12 place-items-center rounded-2xl border border-white/16 bg-white/10 text-white">
                   <Icon className="size-6" strokeWidth={2} />
                 </div>
-                <Badge className="border-amber-200/30 bg-amber-200/15 text-amber-100">{card.status}</Badge>
+                <Badge
+                  className={
+                    card.available
+                      ? "border-emerald-200/30 bg-emerald-200/15 text-emerald-100"
+                      : "border-amber-200/30 bg-amber-200/15 text-amber-100"
+                  }
+                >
+                  {card.status}
+                </Badge>
               </div>
 
               <h3 className="mt-5 text-2xl font-semibold text-white">{card.title}</h3>
