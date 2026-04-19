@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "CosmoRemote",
-    "description": "Control your Claude Code and Codex sessions from your phone with real-time streaming and remote relay."
+    "description": "Your coding agents, finally off the desk. Control Claude Code and Codex from your phone with live streaming and remote relay."
   },
   "nav": {
     "brand": "CosmoRemote",
@@ -17,70 +17,70 @@
     }
   },
   "hero": {
-    "eyebrow": "Bridge + mobile app",
+    "eyebrow": "For devs on the move",
     "title": "CosmoRemote",
-    "subtitle": "Run Claude Code & Codex from your phone",
-    "description": "Install with one command, pair by QR, and watch the stream token by token. Your sessions and projects stay with you wherever you go.",
+    "subtitle": "Your coding agents, finally off the desk",
+    "description": "Install once, pair with a QR, and watch your agents work live — from the couch, the train, or a coffee shop across town.",
     "secondaryCta": "See the app screens",
     "note": "App not launched yet. iPhone, iPad, and Android are marked Coming Soon.",
     "platforms": ["iPhone • Coming Soon", "iPad • Coming Soon", "Android • Coming Soon"],
     "metrics": [
-      { "value": "1 command", "label": "to install the bridge daemon" },
-      { "value": "QR", "label": "pairing over the local network" },
-      { "value": "Live", "label": "streaming without polling" }
+      { "value": "1 command", "label": "to install the bridge" },
+      { "value": "QR", "label": "one scan and you're in" },
+      { "value": "Live", "label": "streaming, zero polling" }
     ]
   },
   "features": {
-    "eyebrow": "Capabilities",
-    "title": "Built for remote coding without losing focus",
-    "description": "From local pairing to remote relay, you switch contexts fast and your history stays intact.",
+    "eyebrow": "What you get",
+    "title": "Stay in flow, wherever you code",
+    "description": "From local pairing to remote relay — switch context fast, and keep every token of history.",
     "items": [
       {
         "icon": "spark",
-        "title": "One-command install",
-        "description": "Install the bridge daemon via brew, winget, or curl and be up in seconds."
+        "title": "One command to install",
+        "description": "Install the bridge with brew, winget, or a single curl. You're live in seconds."
       },
       {
         "icon": "stream",
-        "title": "cosmoremote start",
-        "description": "Detects Claude Code and Codex, boots a local WebSocket, and prints the pairing QR in the terminal."
+        "title": "It boots itself, shows the QR",
+        "description": "Auto-detects Claude Code and Codex, spins up a local WebSocket, and prints the pairing QR in your terminal."
       },
       {
         "icon": "qr",
-        "title": "QR pairing",
-        "description": "Scan once to connect to the local IP with an authenticated token."
+        "title": "Pair with a glance",
+        "description": "Scan once — connected, authenticated, ready."
       },
       {
         "icon": "code",
-        "title": "CLI selector",
-        "description": "Choose Claude Code or Codex per session before sending commands."
+        "title": "Claude or Codex — your call",
+        "description": "Pick the CLI per session. Switch any time before you send."
       },
       {
         "icon": "folder",
-        "title": "Working directory selector",
-        "description": "Save projects under friendly names and swap context with a tap."
+        "title": "Jump between projects",
+        "description": "Save projects under friendly names. Tap once to swap context."
       },
       {
         "icon": "stream",
-        "title": "Real-time streaming",
-        "description": "Token-by-token output with auto-scroll and no polling."
+        "title": "Watch it think in real time",
+        "description": "Token-by-token output with auto-scroll. Zero polling, zero lag."
       },
       {
         "icon": "copy",
-        "title": "Copy output",
-        "description": "Copy the full session or a single code block in one tap."
+        "title": "Grab the answer in one tap",
+        "description": "Copy the whole session or a single code block, instantly."
       },
       {
         "icon": "status",
-        "title": "Connection status",
-        "description": "Clear badges for local, remote, and disconnected while you work."
+        "title": "Always know you're connected",
+        "description": "Crystal-clear badges for local, remote, and offline — no guessing."
       }
     ]
   },
   "screenshots": {
     "eyebrow": "App screens",
-    "title": "Streaming, pairing, and session control",
-    "description": "A quick tour through the main screens: live streaming, session list, and the QR pairing flow.",
+    "title": "See it in motion",
+    "description": "A quick tour: live streaming, your session timeline, and the QR handshake.",
     "items": [
       {
         "title": "Live streaming",
@@ -89,20 +89,20 @@
       },
       {
         "title": "Session list",
-        "caption": "Switch between active, remote, and offline sessions in one timeline.",
+        "caption": "Jump between active, remote, and offline sessions in one timeline.",
         "variant": "sessions"
       },
       {
         "title": "QR pairing",
-        "caption": "Fast local connection with encrypted token handoff.",
+        "caption": "Fast local connection with an encrypted token handshake.",
         "variant": "pairing"
       }
     ]
   },
   "pricing": {
     "eyebrow": "Pricing",
-    "title": "Free to start, with one simple Pro plan",
-    "description": "Fully transparent before launch: Free covers the base workflow, Pro unlocks unlimited scale.",
+    "title": "Start free. Go Pro when you want more.",
+    "description": "No trials, no gotchas. Free covers your daily flow. Pro removes the ceiling.",
     "monthlyLabel": "Pro Monthly",
     "yearlyLabel": "Pro Yearly",
     "monthlyValue": 4.99,
@@ -117,8 +117,8 @@
     "toggleYearly": "Yearly",
     "ctaFree": "Start free",
     "ctaPro": "Get Pro",
-    "monthlyDescription": "Pay month to month and cancel anytime. No lock-in, no surprises.",
-    "yearlyDescription": "Pay once for the whole year and get the same Pro features for less.",
+    "monthlyDescription": "Pay month to month. Cancel anytime — no lock-in, no surprises.",
+    "yearlyDescription": "Pay once for the whole year and keep every Pro feature for less.",
     "yearlyHighlight": "Best value",
     "yearlyComparisonTemplate": "{monthlyTotal} if billed monthly vs {yearly} on the annual plan.",
     "cards": {
@@ -127,11 +127,12 @@
         "QR pairing",
         "CLI + path selector",
         "Real-time streaming",
-        "Offline session history"
+        "Offline session history",
+        "20 messages per day"
       ],
       "premium": [
         "Parallel sessions",
-        "Unlimited daily messages",
+        "Unlimited messages — no daily cap",
         "Multiple Macs",
         "Restore purchases",
         "Priority support"
@@ -148,7 +149,7 @@
         "platform": "iphone",
         "title": "iPhone",
         "status": "Coming Soon",
-        "note": "Remote control, streaming output, and history access on your phone."
+        "note": "Remote control, live streaming, and full history — right in your pocket."
       },
       {
         "platform": "ipad",
@@ -160,7 +161,7 @@
         "platform": "android",
         "title": "Android",
         "status": "Coming Soon",
-        "note": "Same local bridge pairing and relay support for cross-device continuity."
+        "note": "Same local bridge, same relay — cross-device continuity without the fuss."
       }
     ]
   },
@@ -171,11 +172,11 @@
     "questions": [
       {
         "question": "Is CosmoRemote live yet?",
-        "answer": "Not yet. iPhone, iPad, and Android are still pre-launch and marked Coming Soon until the stores are live."
+        "answer": "Not yet. iPhone, iPad, and Android are still pre-launch and marked Coming Soon until the stores open."
       },
       {
         "question": "How does local pairing work?",
-        "answer": "Run cosmoremote start, scan the QR, and the app connects to the local bridge over WebSocket."
+        "answer": "Run cosmoremote start, scan the QR, and the app finds your Mac on the same Wi-Fi. The connection is instant."
       },
       {
         "question": "Can I switch between Claude Code and Codex?",
@@ -183,11 +184,11 @@
       },
       {
         "question": "What's included in Free?",
-        "answer": "Everything you need day to day: install, pairing, streaming, history, and a daily limit."
+        "answer": "Everything you need day to day: install, pairing, streaming, full session history, and 20 messages per day."
       },
       {
         "question": "What does Pro unlock?",
-        "answer": "Parallel sessions, unlimited messages per day, multiple Macs, and restore purchases."
+        "answer": "Parallel sessions, unlimited messages (no daily cap), multiple Macs, and restore purchases."
       },
       {
         "question": "Why pick yearly?",
@@ -197,7 +198,7 @@
   },
   "footer": {
     "brand": "CosmoRemote",
-    "tagline": "Manage your Codex and Claude Code sessions with confidence and clarity.",
+    "tagline": "Coding agents that follow you everywhere.",
     "links": {
       "features": "Features",
       "screenshots": "Screenshots",
