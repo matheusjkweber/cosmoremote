@@ -1,8 +1,12 @@
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/landing/navbar";
 import { Footer } from "@/components/landing/footer";
-import { getDictionary, isRoutedLocale, type Locale } from "@/lib/i18n";
+import { getDictionary, isRoutedLocale, routedLocales, type Locale } from "@/lib/i18n";
 import { Metadata } from "next";
+
+export function generateStaticParams() {
+  return routedLocales.map((lang) => ({ lang }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
