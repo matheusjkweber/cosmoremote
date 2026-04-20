@@ -211,7 +211,9 @@
     },
     "legal": {
       "rights": "© CosmoRemote. Todos os direitos reservados.",
-      "honesty": "Status real de lançamento. Sem números nem avaliações inventados."
+      "honesty": "Status real de lançamento. Sem números nem avaliações inventados.",
+      "terms": "Termos de Serviço",
+      "privacy": "Política de Privacidade"
     }
   }
 }

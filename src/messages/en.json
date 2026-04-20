@@ -211,7 +211,9 @@
     },
     "legal": {
       "rights": "© CosmoRemote. All rights reserved.",
-      "honesty": "Real rollout status. No fake installs, ratings, or reviews."
+      "honesty": "Real rollout status. No fake installs, ratings, or reviews.",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
     }
   }
 }

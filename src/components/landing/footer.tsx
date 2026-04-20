@@ -14,6 +14,8 @@ type FooterContent = {
   legal: {
     rights: string;
     honesty: string;
+    terms: string;
+    privacy: string;
   };
 };
 
@@ -60,6 +62,14 @@ export function Footer({
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/55">Legal</p>
             <p className="mt-4 text-sm text-white/78">{content.legal.rights}</p>
             <p className="mt-2 text-sm text-white/62">{content.legal.honesty}</p>
+            <div className="mt-4 flex items-center gap-4 text-sm text-white/72">
+              <Link href={locale === "en" ? "/terms" : `/${locale}/terms`} className="underline underline-offset-4 hover:text-white transition">
+                {content.legal.terms}
+              </Link>
+              <Link href={locale === "en" ? "/privacy" : `/${locale}/privacy`} className="underline underline-offset-4 hover:text-white transition">
+                {content.legal.privacy}
+              </Link>
+            </div>
             <p className="mt-4 text-sm text-white/72">
               <Link href={localeHref(locale)} className="underline underline-offset-4">
                 {content.brand}
