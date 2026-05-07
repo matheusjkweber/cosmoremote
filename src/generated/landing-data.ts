@@ -57,23 +57,23 @@ export const landingData = {
     "pt-BR": {
       "iphone": [
         {
-          "src": "/screenshots/pt-BR/iphone-1-e4b5bdb88c48.png",
+          "src": "/screenshots/pt-BR/iphone-1-67ca05f25be4.png",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-2-a0f05cd2bc4d.png",
+          "src": "/screenshots/pt-BR/iphone-2-86e31df07fae.png",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-3-24c9b63a0a95.png",
+          "src": "/screenshots/pt-BR/iphone-3-8ab5b74711e5.png",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-4-034af054d3c0.png",
+          "src": "/screenshots/pt-BR/iphone-4-c02753765709.png",
           "alt": "App Store iPhone image 4"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-5-b4a2e6898634.png",
+          "src": "/screenshots/pt-BR/iphone-5-a20e3569cfe4.png",
           "alt": "App Store iPhone image 5"
         }
       ],
