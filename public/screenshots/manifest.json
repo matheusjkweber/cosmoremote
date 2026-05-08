@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T00:48:41.988Z",
+  "generatedAt": "2026-05-08T01:09:15.078Z",
   "pricing": {
     "source": "storekit",
     "currency": "USD",
@@ -11,114 +11,42 @@
     "en": {
       "iphone": [
         {
-          "src": "/screenshots/en/iphone-1-3e6385c7287f.jpg",
+          "src": "/screenshots/en/iphone-1-ee151c81b680.png",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/en/iphone-2-0dbad5bc447b.jpg",
+          "src": "/screenshots/en/iphone-2-d1c4fc4be815.png",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/en/iphone-3-01bc44e17cfd.jpg",
+          "src": "/screenshots/en/iphone-3-d435d6f5dfe6.png",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/en/iphone-4-a0ce3e4d034f.jpg",
+          "src": "/screenshots/en/iphone-4-dbca7b78c305.png",
           "alt": "App Store iPhone image 4"
-        },
-        {
-          "src": "/screenshots/en/iphone-5-3bdec176ceeb.jpg",
-          "alt": "App Store iPhone image 5"
-        },
-        {
-          "src": "/screenshots/en/iphone-6-97d7b5c5a42f.jpg",
-          "alt": "App Store iPhone image 6"
-        },
-        {
-          "src": "/screenshots/en/iphone-7-337f9faede9e.jpg",
-          "alt": "App Store iPhone image 7"
-        },
-        {
-          "src": "/screenshots/en/iphone-8-499e31926dcc.jpg",
-          "alt": "App Store iPhone image 8"
-        },
-        {
-          "src": "/screenshots/en/iphone-9-56ea67c8ad0b.jpg",
-          "alt": "App Store iPhone image 9"
-        },
-        {
-          "src": "/screenshots/en/iphone-10-efd487db2067.jpg",
-          "alt": "App Store iPhone image 10"
-        },
-        {
-          "src": "/screenshots/en/iphone-11-77a9b0a720d6.jpg",
-          "alt": "App Store iPhone image 11"
-        },
-        {
-          "src": "/screenshots/en/iphone-12-30a51993c3ff.jpg",
-          "alt": "App Store iPhone image 12"
-        },
-        {
-          "src": "/screenshots/en/iphone-13-b93ef3936a04.jpg",
-          "alt": "App Store iPhone image 13"
-        },
-        {
-          "src": "/screenshots/en/iphone-14-4f2fd752cb82.jpg",
-          "alt": "App Store iPhone image 14"
-        },
-        {
-          "src": "/screenshots/en/iphone-15-cb5e363fe7ce.jpg",
-          "alt": "App Store iPhone image 15"
         }
       ],
       "ipad": [
         {
-          "src": "/screenshots/en/ipad-1-613fe2287ebb.png",
+          "src": "/screenshots/en/ipad-1-723d8da0717c.png",
           "alt": "App Store iPad image 1"
         },
         {
-          "src": "/screenshots/en/ipad-2-04509a47a4bc.png",
+          "src": "/screenshots/en/ipad-2-879bbb3dc381.png",
           "alt": "App Store iPad image 2"
         },
         {
-          "src": "/screenshots/en/ipad-3-5a24c8aec806.png",
+          "src": "/screenshots/en/ipad-3-dc3f5c28063d.png",
           "alt": "App Store iPad image 3"
         },
         {
-          "src": "/screenshots/en/ipad-4-ff8e7fc70fbe.png",
+          "src": "/screenshots/en/ipad-4-10cb6d26fc50.png",
           "alt": "App Store iPad image 4"
         },
         {
-          "src": "/screenshots/en/ipad-5-364a43f0c53d.png",
+          "src": "/screenshots/en/ipad-5-28aff599f592.png",
           "alt": "App Store iPad image 5"
-        },
-        {
-          "src": "/screenshots/en/ipad-6-02473025ee25.png",
-          "alt": "App Store iPad image 6"
-        },
-        {
-          "src": "/screenshots/en/ipad-7-381eaccb6ef3.png",
-          "alt": "App Store iPad image 7"
-        },
-        {
-          "src": "/screenshots/en/ipad-8-dd2e80754d84.png",
-          "alt": "App Store iPad image 8"
-        },
-        {
-          "src": "/screenshots/en/ipad-9-59539c8aa75b.png",
-          "alt": "App Store iPad image 9"
-        },
-        {
-          "src": "/screenshots/en/ipad-10-04f6dda9b587.png",
-          "alt": "App Store iPad image 10"
-        },
-        {
-          "src": "/screenshots/en/ipad-11-570259da5555.png",
-          "alt": "App Store iPad image 11"
-        },
-        {
-          "src": "/screenshots/en/ipad-12-561af1d7e964.png",
-          "alt": "App Store iPad image 12"
         }
       ],
       "macos": [],
@@ -129,114 +57,46 @@
     "pt-BR": {
       "iphone": [
         {
-          "src": "/screenshots/pt-BR/iphone-1-3e6385c7287f.jpg",
+          "src": "/screenshots/pt-BR/iphone-1-e4b5bdb88c48.png",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-2-0dbad5bc447b.jpg",
+          "src": "/screenshots/pt-BR/iphone-2-a0f05cd2bc4d.png",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-3-01bc44e17cfd.jpg",
+          "src": "/screenshots/pt-BR/iphone-3-24c9b63a0a95.png",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-4-a0ce3e4d034f.jpg",
+          "src": "/screenshots/pt-BR/iphone-4-034af054d3c0.png",
           "alt": "App Store iPhone image 4"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-5-3bdec176ceeb.jpg",
+          "src": "/screenshots/pt-BR/iphone-5-b4a2e6898634.png",
           "alt": "App Store iPhone image 5"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-6-97d7b5c5a42f.jpg",
-          "alt": "App Store iPhone image 6"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-7-337f9faede9e.jpg",
-          "alt": "App Store iPhone image 7"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-8-499e31926dcc.jpg",
-          "alt": "App Store iPhone image 8"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-9-56ea67c8ad0b.jpg",
-          "alt": "App Store iPhone image 9"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-10-efd487db2067.jpg",
-          "alt": "App Store iPhone image 10"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-11-77a9b0a720d6.jpg",
-          "alt": "App Store iPhone image 11"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-12-30a51993c3ff.jpg",
-          "alt": "App Store iPhone image 12"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-13-b93ef3936a04.jpg",
-          "alt": "App Store iPhone image 13"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-14-4f2fd752cb82.jpg",
-          "alt": "App Store iPhone image 14"
-        },
-        {
-          "src": "/screenshots/pt-BR/iphone-15-cb5e363fe7ce.jpg",
-          "alt": "App Store iPhone image 15"
         }
       ],
       "ipad": [
         {
-          "src": "/screenshots/pt-BR/ipad-1-613fe2287ebb.png",
+          "src": "/screenshots/pt-BR/ipad-1-8794f54b784c.png",
           "alt": "App Store iPad image 1"
         },
         {
-          "src": "/screenshots/pt-BR/ipad-2-04509a47a4bc.png",
+          "src": "/screenshots/pt-BR/ipad-2-d64971260705.png",
           "alt": "App Store iPad image 2"
         },
         {
-          "src": "/screenshots/pt-BR/ipad-3-5a24c8aec806.png",
+          "src": "/screenshots/pt-BR/ipad-3-bd08abf73565.png",
           "alt": "App Store iPad image 3"
         },
         {
-          "src": "/screenshots/pt-BR/ipad-4-ff8e7fc70fbe.png",
+          "src": "/screenshots/pt-BR/ipad-4-0898694685cc.png",
           "alt": "App Store iPad image 4"
         },
         {
-          "src": "/screenshots/pt-BR/ipad-5-364a43f0c53d.png",
+          "src": "/screenshots/pt-BR/ipad-5-73a6e5ca2375.png",
           "alt": "App Store iPad image 5"
-        },
-        {
-          "src": "/screenshots/pt-BR/ipad-6-02473025ee25.png",
-          "alt": "App Store iPad image 6"
-        },
-        {
-          "src": "/screenshots/pt-BR/ipad-7-381eaccb6ef3.png",
-          "alt": "App Store iPad image 7"
-        },
-        {
-          "src": "/screenshots/pt-BR/ipad-8-dd2e80754d84.png",
-          "alt": "App Store iPad image 8"
-        },
-        {
-          "src": "/screenshots/pt-BR/ipad-9-59539c8aa75b.png",
-          "alt": "App Store iPad image 9"
-        },
-        {
-          "src": "/screenshots/pt-BR/ipad-10-04f6dda9b587.png",
-          "alt": "App Store iPad image 10"
-        },
-        {
-          "src": "/screenshots/pt-BR/ipad-11-570259da5555.png",
-          "alt": "App Store iPad image 11"
-        },
-        {
-          "src": "/screenshots/pt-BR/ipad-12-561af1d7e964.png",
-          "alt": "App Store iPad image 12"
         }
       ],
       "macos": [],
@@ -247,114 +107,42 @@
     "es": {
       "iphone": [
         {
-          "src": "/screenshots/es/iphone-1-3e6385c7287f.jpg",
+          "src": "/screenshots/es/iphone-1-d824028684dc.png",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/es/iphone-2-0dbad5bc447b.jpg",
+          "src": "/screenshots/es/iphone-2-4bedce42309d.png",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/es/iphone-3-01bc44e17cfd.jpg",
+          "src": "/screenshots/es/iphone-3-67bd2bd8733d.png",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/es/iphone-4-a0ce3e4d034f.jpg",
+          "src": "/screenshots/es/iphone-4-bdbd34e5f670.png",
           "alt": "App Store iPhone image 4"
-        },
-        {
-          "src": "/screenshots/es/iphone-5-3bdec176ceeb.jpg",
-          "alt": "App Store iPhone image 5"
-        },
-        {
-          "src": "/screenshots/es/iphone-6-97d7b5c5a42f.jpg",
-          "alt": "App Store iPhone image 6"
-        },
-        {
-          "src": "/screenshots/es/iphone-7-337f9faede9e.jpg",
-          "alt": "App Store iPhone image 7"
-        },
-        {
-          "src": "/screenshots/es/iphone-8-499e31926dcc.jpg",
-          "alt": "App Store iPhone image 8"
-        },
-        {
-          "src": "/screenshots/es/iphone-9-56ea67c8ad0b.jpg",
-          "alt": "App Store iPhone image 9"
-        },
-        {
-          "src": "/screenshots/es/iphone-10-efd487db2067.jpg",
-          "alt": "App Store iPhone image 10"
-        },
-        {
-          "src": "/screenshots/es/iphone-11-77a9b0a720d6.jpg",
-          "alt": "App Store iPhone image 11"
-        },
-        {
-          "src": "/screenshots/es/iphone-12-30a51993c3ff.jpg",
-          "alt": "App Store iPhone image 12"
-        },
-        {
-          "src": "/screenshots/es/iphone-13-b93ef3936a04.jpg",
-          "alt": "App Store iPhone image 13"
-        },
-        {
-          "src": "/screenshots/es/iphone-14-4f2fd752cb82.jpg",
-          "alt": "App Store iPhone image 14"
-        },
-        {
-          "src": "/screenshots/es/iphone-15-cb5e363fe7ce.jpg",
-          "alt": "App Store iPhone image 15"
         }
       ],
       "ipad": [
         {
-          "src": "/screenshots/es/ipad-1-613fe2287ebb.png",
+          "src": "/screenshots/es/ipad-1-b173e66b99a2.png",
           "alt": "App Store iPad image 1"
         },
         {
-          "src": "/screenshots/es/ipad-2-04509a47a4bc.png",
+          "src": "/screenshots/es/ipad-2-1bf0d5cc6815.png",
           "alt": "App Store iPad image 2"
         },
         {
-          "src": "/screenshots/es/ipad-3-5a24c8aec806.png",
+          "src": "/screenshots/es/ipad-3-2819ab66d096.png",
           "alt": "App Store iPad image 3"
         },
         {
-          "src": "/screenshots/es/ipad-4-ff8e7fc70fbe.png",
+          "src": "/screenshots/es/ipad-4-2abbe4b8e479.png",
           "alt": "App Store iPad image 4"
         },
         {
-          "src": "/screenshots/es/ipad-5-364a43f0c53d.png",
+          "src": "/screenshots/es/ipad-5-e7ab8dcb7f33.png",
           "alt": "App Store iPad image 5"
-        },
-        {
-          "src": "/screenshots/es/ipad-6-02473025ee25.png",
-          "alt": "App Store iPad image 6"
-        },
-        {
-          "src": "/screenshots/es/ipad-7-381eaccb6ef3.png",
-          "alt": "App Store iPad image 7"
-        },
-        {
-          "src": "/screenshots/es/ipad-8-dd2e80754d84.png",
-          "alt": "App Store iPad image 8"
-        },
-        {
-          "src": "/screenshots/es/ipad-9-59539c8aa75b.png",
-          "alt": "App Store iPad image 9"
-        },
-        {
-          "src": "/screenshots/es/ipad-10-04f6dda9b587.png",
-          "alt": "App Store iPad image 10"
-        },
-        {
-          "src": "/screenshots/es/ipad-11-570259da5555.png",
-          "alt": "App Store iPad image 11"
-        },
-        {
-          "src": "/screenshots/es/ipad-12-561af1d7e964.png",
-          "alt": "App Store iPad image 12"
         }
       ],
       "macos": [],
