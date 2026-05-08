@@ -138,7 +138,7 @@
     "monthlyValue": 19.9,
     "yearlyValue": 199.9,
     "freeLabel": "Free",
-    "freePrice": "R$0",
+    "freePrice": "$0",
     "trialLabel": "Purchases open at launch",
     "cadenceMonthly": "/month",
     "cadenceYearly": "/year",

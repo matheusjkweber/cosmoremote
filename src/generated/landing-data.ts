@@ -7,7 +7,14 @@ export const landingData = {
     "currency": "BRL",
     "monthly": 19.9,
     "yearly": 199.9,
-    "lifetime": null
+    "lifetime": null,
+    "rates": {
+      "BRL": 1,
+      "USD": 0.2035,
+      "EUR": 0.17303
+    },
+    "rateDate": "2026-05-08",
+    "rateSource": "Frankfurter / ECB reference rates"
   },
   "screenshots": {
     "en": {
