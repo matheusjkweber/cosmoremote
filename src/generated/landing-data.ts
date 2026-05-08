@@ -8,6 +8,23 @@ export const landingData = {
     "monthly": 19.9,
     "yearly": 199.9,
     "lifetime": null,
+    "localizedPrices": {
+      "USD": {
+        "monthly": 2.99,
+        "yearly": 29.99,
+        "lifetime": null
+      },
+      "EUR": {
+        "monthly": 2.99,
+        "yearly": 34.99,
+        "lifetime": null
+      },
+      "BRL": {
+        "monthly": 19.9,
+        "yearly": 199.9,
+        "lifetime": null
+      }
+    },
     "rates": {
       "BRL": 1,
       "USD": 0.2035,
