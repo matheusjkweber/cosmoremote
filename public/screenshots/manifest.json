@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T01:38:35.201Z",
+  "generatedAt": "2026-05-08T02:25:25.996Z",
   "pricing": {
     "source": "storekit",
     "currency": "USD",
@@ -11,19 +11,19 @@
     "en": {
       "iphone": [
         {
-          "src": "/screenshots/en/iphone-1-0f9d844753ab.png",
+          "src": "/screenshots/en/iphone-1-6c19b6bd1aa6.png",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/en/iphone-2-f9a4e63e165f.png",
+          "src": "/screenshots/en/iphone-2-3e72d9b251aa.png",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/en/iphone-3-080b31afc732.png",
+          "src": "/screenshots/en/iphone-3-f2d7f830301c.png",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/en/iphone-4-1fff2368d79f.png",
+          "src": "/screenshots/en/iphone-4-dd755e918cc3.png",
           "alt": "App Store iPhone image 4"
         }
       ],
@@ -57,23 +57,23 @@
     "pt-BR": {
       "iphone": [
         {
-          "src": "/screenshots/pt-BR/iphone-1-9bd3f7185d99.png",
+          "src": "/screenshots/pt-BR/iphone-1-784affd81df0.png",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-2-c257ddcbc309.png",
+          "src": "/screenshots/pt-BR/iphone-2-58c69a0bf58c.png",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-3-6d7e05d1ea2d.png",
+          "src": "/screenshots/pt-BR/iphone-3-b32e250ca035.png",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-4-0c4869398a00.png",
+          "src": "/screenshots/pt-BR/iphone-4-4e0b07d6040d.png",
           "alt": "App Store iPhone image 4"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-5-9fa370ca8109.png",
+          "src": "/screenshots/pt-BR/iphone-5-7000be5e9cbd.png",
           "alt": "App Store iPhone image 5"
         }
       ],
@@ -107,19 +107,19 @@
     "es": {
       "iphone": [
         {
-          "src": "/screenshots/es/iphone-1-2f9255c78107.png",
+          "src": "/screenshots/es/iphone-1-ba6c6f6113c9.png",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/es/iphone-2-5b2019feef73.png",
+          "src": "/screenshots/es/iphone-2-941f746da68b.png",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/es/iphone-3-962e4b532623.png",
+          "src": "/screenshots/es/iphone-3-319b1588b6cb.png",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/es/iphone-4-fa1a67634f9a.png",
+          "src": "/screenshots/es/iphone-4-86937768920c.png",
           "alt": "App Store iPhone image 4"
         }
       ],
