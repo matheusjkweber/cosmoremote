@@ -11,42 +11,114 @@ export const landingData = {
     "en": {
       "iphone": [
         {
-          "src": "/screenshots/en/iphone-1-ee151c81b680.png",
+          "src": "/screenshots/en/iphone-1-3e6385c7287f.jpg",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/en/iphone-2-d1c4fc4be815.png",
+          "src": "/screenshots/en/iphone-2-0dbad5bc447b.jpg",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/en/iphone-3-d435d6f5dfe6.png",
+          "src": "/screenshots/en/iphone-3-01bc44e17cfd.jpg",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/en/iphone-4-dbca7b78c305.png",
+          "src": "/screenshots/en/iphone-4-a0ce3e4d034f.jpg",
           "alt": "App Store iPhone image 4"
+        },
+        {
+          "src": "/screenshots/en/iphone-5-3bdec176ceeb.jpg",
+          "alt": "App Store iPhone image 5"
+        },
+        {
+          "src": "/screenshots/en/iphone-6-97d7b5c5a42f.jpg",
+          "alt": "App Store iPhone image 6"
+        },
+        {
+          "src": "/screenshots/en/iphone-7-337f9faede9e.jpg",
+          "alt": "App Store iPhone image 7"
+        },
+        {
+          "src": "/screenshots/en/iphone-8-499e31926dcc.jpg",
+          "alt": "App Store iPhone image 8"
+        },
+        {
+          "src": "/screenshots/en/iphone-9-56ea67c8ad0b.jpg",
+          "alt": "App Store iPhone image 9"
+        },
+        {
+          "src": "/screenshots/en/iphone-10-efd487db2067.jpg",
+          "alt": "App Store iPhone image 10"
+        },
+        {
+          "src": "/screenshots/en/iphone-11-77a9b0a720d6.jpg",
+          "alt": "App Store iPhone image 11"
+        },
+        {
+          "src": "/screenshots/en/iphone-12-30a51993c3ff.jpg",
+          "alt": "App Store iPhone image 12"
+        },
+        {
+          "src": "/screenshots/en/iphone-13-b93ef3936a04.jpg",
+          "alt": "App Store iPhone image 13"
+        },
+        {
+          "src": "/screenshots/en/iphone-14-4f2fd752cb82.jpg",
+          "alt": "App Store iPhone image 14"
+        },
+        {
+          "src": "/screenshots/en/iphone-15-cb5e363fe7ce.jpg",
+          "alt": "App Store iPhone image 15"
         }
       ],
       "ipad": [
         {
-          "src": "/screenshots/en/ipad-1-723d8da0717c.png",
+          "src": "/screenshots/en/ipad-1-613fe2287ebb.png",
           "alt": "App Store iPad image 1"
         },
         {
-          "src": "/screenshots/en/ipad-2-879bbb3dc381.png",
+          "src": "/screenshots/en/ipad-2-04509a47a4bc.png",
           "alt": "App Store iPad image 2"
         },
         {
-          "src": "/screenshots/en/ipad-3-dc3f5c28063d.png",
+          "src": "/screenshots/en/ipad-3-5a24c8aec806.png",
           "alt": "App Store iPad image 3"
         },
         {
-          "src": "/screenshots/en/ipad-4-10cb6d26fc50.png",
+          "src": "/screenshots/en/ipad-4-ff8e7fc70fbe.png",
           "alt": "App Store iPad image 4"
         },
         {
-          "src": "/screenshots/en/ipad-5-28aff599f592.png",
+          "src": "/screenshots/en/ipad-5-364a43f0c53d.png",
           "alt": "App Store iPad image 5"
+        },
+        {
+          "src": "/screenshots/en/ipad-6-02473025ee25.png",
+          "alt": "App Store iPad image 6"
+        },
+        {
+          "src": "/screenshots/en/ipad-7-381eaccb6ef3.png",
+          "alt": "App Store iPad image 7"
+        },
+        {
+          "src": "/screenshots/en/ipad-8-dd2e80754d84.png",
+          "alt": "App Store iPad image 8"
+        },
+        {
+          "src": "/screenshots/en/ipad-9-59539c8aa75b.png",
+          "alt": "App Store iPad image 9"
+        },
+        {
+          "src": "/screenshots/en/ipad-10-04f6dda9b587.png",
+          "alt": "App Store iPad image 10"
+        },
+        {
+          "src": "/screenshots/en/ipad-11-570259da5555.png",
+          "alt": "App Store iPad image 11"
+        },
+        {
+          "src": "/screenshots/en/ipad-12-561af1d7e964.png",
+          "alt": "App Store iPad image 12"
         }
       ],
       "macos": [],
@@ -57,46 +129,114 @@ export const landingData = {
     "pt-BR": {
       "iphone": [
         {
-          "src": "/screenshots/pt-BR/iphone-1-67ca05f25be4.png",
+          "src": "/screenshots/pt-BR/iphone-1-3e6385c7287f.jpg",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-2-86e31df07fae.png",
+          "src": "/screenshots/pt-BR/iphone-2-0dbad5bc447b.jpg",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-3-8ab5b74711e5.png",
+          "src": "/screenshots/pt-BR/iphone-3-01bc44e17cfd.jpg",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-4-c02753765709.png",
+          "src": "/screenshots/pt-BR/iphone-4-a0ce3e4d034f.jpg",
           "alt": "App Store iPhone image 4"
         },
         {
-          "src": "/screenshots/pt-BR/iphone-5-a20e3569cfe4.png",
+          "src": "/screenshots/pt-BR/iphone-5-3bdec176ceeb.jpg",
           "alt": "App Store iPhone image 5"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-6-97d7b5c5a42f.jpg",
+          "alt": "App Store iPhone image 6"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-7-337f9faede9e.jpg",
+          "alt": "App Store iPhone image 7"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-8-499e31926dcc.jpg",
+          "alt": "App Store iPhone image 8"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-9-56ea67c8ad0b.jpg",
+          "alt": "App Store iPhone image 9"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-10-efd487db2067.jpg",
+          "alt": "App Store iPhone image 10"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-11-77a9b0a720d6.jpg",
+          "alt": "App Store iPhone image 11"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-12-30a51993c3ff.jpg",
+          "alt": "App Store iPhone image 12"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-13-b93ef3936a04.jpg",
+          "alt": "App Store iPhone image 13"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-14-4f2fd752cb82.jpg",
+          "alt": "App Store iPhone image 14"
+        },
+        {
+          "src": "/screenshots/pt-BR/iphone-15-cb5e363fe7ce.jpg",
+          "alt": "App Store iPhone image 15"
         }
       ],
       "ipad": [
         {
-          "src": "/screenshots/pt-BR/ipad-1-bfd0faed380d.png",
+          "src": "/screenshots/pt-BR/ipad-1-613fe2287ebb.png",
           "alt": "App Store iPad image 1"
         },
         {
-          "src": "/screenshots/pt-BR/ipad-2-1a2ddf258b59.png",
+          "src": "/screenshots/pt-BR/ipad-2-04509a47a4bc.png",
           "alt": "App Store iPad image 2"
         },
         {
-          "src": "/screenshots/pt-BR/ipad-3-4450727330e3.png",
+          "src": "/screenshots/pt-BR/ipad-3-5a24c8aec806.png",
           "alt": "App Store iPad image 3"
         },
         {
-          "src": "/screenshots/pt-BR/ipad-4-2f5b1b816d16.png",
+          "src": "/screenshots/pt-BR/ipad-4-ff8e7fc70fbe.png",
           "alt": "App Store iPad image 4"
         },
         {
-          "src": "/screenshots/pt-BR/ipad-5-162ce471b6fd.png",
+          "src": "/screenshots/pt-BR/ipad-5-364a43f0c53d.png",
           "alt": "App Store iPad image 5"
+        },
+        {
+          "src": "/screenshots/pt-BR/ipad-6-02473025ee25.png",
+          "alt": "App Store iPad image 6"
+        },
+        {
+          "src": "/screenshots/pt-BR/ipad-7-381eaccb6ef3.png",
+          "alt": "App Store iPad image 7"
+        },
+        {
+          "src": "/screenshots/pt-BR/ipad-8-dd2e80754d84.png",
+          "alt": "App Store iPad image 8"
+        },
+        {
+          "src": "/screenshots/pt-BR/ipad-9-59539c8aa75b.png",
+          "alt": "App Store iPad image 9"
+        },
+        {
+          "src": "/screenshots/pt-BR/ipad-10-04f6dda9b587.png",
+          "alt": "App Store iPad image 10"
+        },
+        {
+          "src": "/screenshots/pt-BR/ipad-11-570259da5555.png",
+          "alt": "App Store iPad image 11"
+        },
+        {
+          "src": "/screenshots/pt-BR/ipad-12-561af1d7e964.png",
+          "alt": "App Store iPad image 12"
         }
       ],
       "macos": [],
@@ -107,42 +247,114 @@ export const landingData = {
     "es": {
       "iphone": [
         {
-          "src": "/screenshots/es/iphone-1-d824028684dc.png",
+          "src": "/screenshots/es/iphone-1-3e6385c7287f.jpg",
           "alt": "App Store iPhone image 1"
         },
         {
-          "src": "/screenshots/es/iphone-2-4bedce42309d.png",
+          "src": "/screenshots/es/iphone-2-0dbad5bc447b.jpg",
           "alt": "App Store iPhone image 2"
         },
         {
-          "src": "/screenshots/es/iphone-3-67bd2bd8733d.png",
+          "src": "/screenshots/es/iphone-3-01bc44e17cfd.jpg",
           "alt": "App Store iPhone image 3"
         },
         {
-          "src": "/screenshots/es/iphone-4-bdbd34e5f670.png",
+          "src": "/screenshots/es/iphone-4-a0ce3e4d034f.jpg",
           "alt": "App Store iPhone image 4"
+        },
+        {
+          "src": "/screenshots/es/iphone-5-3bdec176ceeb.jpg",
+          "alt": "App Store iPhone image 5"
+        },
+        {
+          "src": "/screenshots/es/iphone-6-97d7b5c5a42f.jpg",
+          "alt": "App Store iPhone image 6"
+        },
+        {
+          "src": "/screenshots/es/iphone-7-337f9faede9e.jpg",
+          "alt": "App Store iPhone image 7"
+        },
+        {
+          "src": "/screenshots/es/iphone-8-499e31926dcc.jpg",
+          "alt": "App Store iPhone image 8"
+        },
+        {
+          "src": "/screenshots/es/iphone-9-56ea67c8ad0b.jpg",
+          "alt": "App Store iPhone image 9"
+        },
+        {
+          "src": "/screenshots/es/iphone-10-efd487db2067.jpg",
+          "alt": "App Store iPhone image 10"
+        },
+        {
+          "src": "/screenshots/es/iphone-11-77a9b0a720d6.jpg",
+          "alt": "App Store iPhone image 11"
+        },
+        {
+          "src": "/screenshots/es/iphone-12-30a51993c3ff.jpg",
+          "alt": "App Store iPhone image 12"
+        },
+        {
+          "src": "/screenshots/es/iphone-13-b93ef3936a04.jpg",
+          "alt": "App Store iPhone image 13"
+        },
+        {
+          "src": "/screenshots/es/iphone-14-4f2fd752cb82.jpg",
+          "alt": "App Store iPhone image 14"
+        },
+        {
+          "src": "/screenshots/es/iphone-15-cb5e363fe7ce.jpg",
+          "alt": "App Store iPhone image 15"
         }
       ],
       "ipad": [
         {
-          "src": "/screenshots/es/ipad-1-b173e66b99a2.png",
+          "src": "/screenshots/es/ipad-1-613fe2287ebb.png",
           "alt": "App Store iPad image 1"
         },
         {
-          "src": "/screenshots/es/ipad-2-1bf0d5cc6815.png",
+          "src": "/screenshots/es/ipad-2-04509a47a4bc.png",
           "alt": "App Store iPad image 2"
         },
         {
-          "src": "/screenshots/es/ipad-3-2819ab66d096.png",
+          "src": "/screenshots/es/ipad-3-5a24c8aec806.png",
           "alt": "App Store iPad image 3"
         },
         {
-          "src": "/screenshots/es/ipad-4-2abbe4b8e479.png",
+          "src": "/screenshots/es/ipad-4-ff8e7fc70fbe.png",
           "alt": "App Store iPad image 4"
         },
         {
-          "src": "/screenshots/es/ipad-5-e7ab8dcb7f33.png",
+          "src": "/screenshots/es/ipad-5-364a43f0c53d.png",
           "alt": "App Store iPad image 5"
+        },
+        {
+          "src": "/screenshots/es/ipad-6-02473025ee25.png",
+          "alt": "App Store iPad image 6"
+        },
+        {
+          "src": "/screenshots/es/ipad-7-381eaccb6ef3.png",
+          "alt": "App Store iPad image 7"
+        },
+        {
+          "src": "/screenshots/es/ipad-8-dd2e80754d84.png",
+          "alt": "App Store iPad image 8"
+        },
+        {
+          "src": "/screenshots/es/ipad-9-59539c8aa75b.png",
+          "alt": "App Store iPad image 9"
+        },
+        {
+          "src": "/screenshots/es/ipad-10-04f6dda9b587.png",
+          "alt": "App Store iPad image 10"
+        },
+        {
+          "src": "/screenshots/es/ipad-11-570259da5555.png",
+          "alt": "App Store iPad image 11"
+        },
+        {
+          "src": "/screenshots/es/ipad-12-561af1d7e964.png",
+          "alt": "App Store iPad image 12"
         }
       ],
       "macos": [],
@@ -202,16 +414,32 @@ export const landingData = {
     },
     "listings": [
       {
-        "platform": "ios",
-        "locale": "pt-BR",
-        "title": "CosmoRemote",
-        "subtitle": "Gerencie seu Codex e Claude",
-        "description": "Aumente sua produtividade com CosmoRemote!\n\nGerencie múltiplas sessões de Claude Code e Codex de forma eficiente e produtiva. Com CosmoRemote, você pode:\n\n• Gerenciar múltiplas sessões paralelas\n• Histórico por projeto\n• Streaming em tempo real\n• Conexão ao Mac via servidor bridge standalone\n\nE com a versão Pro, você ganha:\n\n• Sessões paralelas ilimitadas\n• Mensagens ilimitadas por dia\n• Conexão a vários Macs\n\nBaixe agora e aumente sua produtividade!",
-        "keywords": "produtividade,gerenciamento,sessões,Codex,Claude Code"
+        "platform": "macos",
+        "locale": "en-US",
+        "title": null,
+        "subtitle": null,
+        "description": null,
+        "keywords": null
+      },
+      {
+        "platform": "macos",
+        "locale": "es-ES",
+        "title": null,
+        "subtitle": null,
+        "description": null,
+        "keywords": null
       },
       {
         "platform": "ios",
         "locale": "en-US",
+        "title": "CosmoRemote AI Control",
+        "subtitle": "Manage Claude Code & Codex",
+        "description": "Take control of your Claude Code and Codex sessions with CosmoRemote.\nEffortlessly manage multiple sessions, switch between projects, and access your history from anywhere.\n\nWith CosmoRemote, you can:\n• Run multiple parallel sessions with independent CLI processes\n• Access unlimited messages per day with no daily cap\n• Pair and switch between multiple Mac machines\n• Enjoy a seamless experience with real-time streaming and syntax highlighting\n\nUpgrade to Pro for exclusive benefits: Parallel sessions, Unlimited messages/day, Multiple Macs, and more.\n\nTry CosmoRemote today and boost your productivity!",
+        "keywords": "ai,claude,codex,remote,control,cli,mac,productivity"
+      },
+      {
+        "platform": "macos",
+        "locale": "pt-BR",
         "title": null,
         "subtitle": null,
         "description": null,
@@ -220,11 +448,23 @@ export const landingData = {
       {
         "platform": "ios",
         "locale": "es-ES",
-        "title": null,
-        "subtitle": null,
-        "description": null,
-        "keywords": null
+        "title": "CosmoRemote",
+        "subtitle": "Gestiona Claude Code y Codex",
+        "description": "¿Necesitas gestionar múltiples sesiones de Claude Code y Codex de forma eficiente? CosmoRemote es la solución perfecta para ti. Con nuestra app, podrás:\n\n• Gestionar múltiples sesiones paralelas\n• Ver histórico de proyectos\n• Streaming en tiempo real\n• Conexión al Mac vía servidor bridge standalone\n\nY con nuestra suscripción Pro, podrás disfrutar de:\n\n• Sesiones paralelas ilimitadas\n• Mensajes ilimitados al día\n• Acceso a múltiples Macs\n\n¡Descarga ahora y mejora tu productividad!",
+        "keywords": "gestión de sesiones, Claude Code, Codex, productividad, eficiencia, sesiones paralelas"
+      },
+      {
+        "platform": "ios",
+        "locale": "pt-BR",
+        "title": "CosmoRemote — Eficiência",
+        "subtitle": "Gerencie seu Codex e Claude",
+        "description": "Aumente sua produtividade com CosmoRemote!\n\nGerencie múltiplas sessões de Claude Code e Codex de forma eficiente e produtiva. Com CosmoRemote, você pode:\n\n• Gerenciar múltiplas sessões paralelas\n• Histórico por projeto\n• Streaming em tempo real\n• Conexão ao Mac via servidor bridge standalone\n\nE com a versão Pro, você ganha:\n\n• Sessões paralelas ilimitadas\n• Mensagens ilimitadas por dia\n• Conexão a vários Macs\n\nBaixe agora e aumente sua produtividade!",
+        "keywords": "produtividade,gerenciamento,sessões,Codex,Claude Code"
       }
-    ]
+    ],
+    "brand": {
+      "rules": "## Brand Rules para CosmoRemote\n====================================\n\n### 1. Color Palette\n\n* **Primary:** `#3498db`\n* **Secondary:** `#2ecc71`\n* **Accent:** `#9b59b6`\n* **Success:** `#2ecc71`\n* **Warning:** `#f1c40f`\n* **Error:** `#e74c3c`\n* **Background:** `#f9f9f9`\n* **Text:** `#333333`\n* **Dark Background:** `#2f2f2f`\n* **Dark Text:** `#ffffff`\n\n### 2. Typography\n\n* **Fonte Principal:** Montserrat\n* **Tamanhos de Fonte:**\n\t+ **h1:** 36px\n\t+ **h2:** 28px\n\t+ **h3:** 24px\n\t+ **h4:** 20px\n\t+ **h5:** 18px\n\t+ **h6:** 16px\n\t+ **Body:** 14px\n\t+ **Caption:** 12px\n\n### 3. Spacing & Layout\n\n* **Border Radius:** 8px\n* **Sombras:** 0 2px 4px rgba(0, 0, 0, 0.1)\n\n### 4. Tone of Voice\n\n* **Personalidade:** Amigável, profissional e confiável\n* **Exemplos:**\n\t+ \"Seus agentes, ao seu alcance!\"\n\t+ \"Gerencie suas sessões de Claude Code e Codex de forma eficiente e produtiva\"\n\n### 5. Icon Style\n\n* **Estilo:** Outline\n* **Espessura do Traço:** 2px\n\n### 6. Dark Mode\n\n* **Cores:**\n\t+ **Background:** `#2f2f2f`\n\t+ **Text:** `#ffffff`\n\t+ **Primary:** `#3498db`\n\t+ **Secondary:** `#2ecc71`\n* **Outras Elementos:** Ajustar cores e contraste para garantir legibilidade e visibilidade\n\n### 7. Do's and Don'ts\n\n* **DO:**\n\t+ Utilizar a paleta de cores definida\n\t+ Usar fontes e tamanhos de fonte definidos\n\t+ Manter consistência em layout e espaçamento\n\t+ Utilizar ícones e elementos de design definidos\n* **DON'T:**\n\t+ Utilizar cores não definidas\n\t+ Mudar fontes ou tamanhos de fonte sem justificativa\n\t+ Alterar layout ou espaçamento sem justificativa\n\t+ Utilizar ícones ou elementos de design não definidos\n\nEssas regras de marca devem ser aplicadas em todas as plataformas e contextos, garantindo uma experiência de usuário consistente e agradável para os usuários do CosmoRemote.",
+      "brandScreenshots": []
+    }
   }
 } as const;

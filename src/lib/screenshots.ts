@@ -10,8 +10,8 @@ export type ScreenshotAsset = {
 };
 
 const screenshotDimensions = {
-  iphone: { width: 1284, height: 2778 },
-  ipad: { width: 2048, height: 2732 },
+  iphone: { width: 738, height: 1600 },
+  ipad: { width: 1640, height: 2360 },
 } satisfies Record<ScreenshotDevice, { width: number; height: number }>;
 
 export function getScreenshotDimensions(asset: Pick<ScreenshotAsset, "device">) {
