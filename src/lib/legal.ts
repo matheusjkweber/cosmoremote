@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PUBLIC_CONTACT_EMAIL } from "@/lib/contact";
 import type { Locale } from "@/lib/i18n";
 
 export type LegalDocument = {
@@ -65,7 +66,7 @@ export const legalContent: Record<Locale, LegalContent> = {
           title: "6. Your choices",
           body: [
             "You can limit data processing by using local-only workflows where available, disabling optional telemetry, deleting local session history, signing out, or removing paired devices.",
-            "For account, deletion, or privacy requests, use the support channel provided in the app or on the official CosmoRemote website.",
+            `For account, deletion, or privacy requests, contact CosmoRemote at ${PUBLIC_CONTACT_EMAIL}.`,
           ],
         },
       ],
@@ -169,7 +170,7 @@ export const legalContent: Record<Locale, LegalContent> = {
           title: "6. Suas escolhas",
           body: [
             "Você pode limitar o tratamento de dados usando fluxos locais quando disponíveis, desativando telemetria opcional, apagando histórico local de sessões, saindo da conta ou removendo dispositivos pareados.",
-            "Para solicitações sobre conta, exclusão ou privacidade, use o canal de suporte informado no app ou no site oficial do CosmoRemote.",
+            `Para solicitações sobre conta, exclusão ou privacidade, entre em contato com o CosmoRemote pelo email ${PUBLIC_CONTACT_EMAIL}.`,
           ],
         },
       ],
@@ -273,7 +274,7 @@ export const legalContent: Record<Locale, LegalContent> = {
           title: "6. Tus opciones",
           body: [
             "Puedes limitar el procesamiento usando flujos locales cuando estén disponibles, desactivando telemetría opcional, borrando el historial local de sesiones, cerrando sesión o eliminando dispositivos vinculados.",
-            "Para solicitudes de cuenta, eliminación o privacidad, usa el canal de soporte indicado en la app o en el sitio oficial de CosmoRemote.",
+            `Para solicitudes de cuenta, eliminación o privacidad, contacta a CosmoRemote en ${PUBLIC_CONTACT_EMAIL}.`,
           ],
         },
       ],

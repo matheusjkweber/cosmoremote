@@ -21,6 +21,7 @@
     "title": "CosmoRemote",
     "subtitle": "Controla tu código desde cualquier lugar",
     "description": "Conecta el celular al Mac que ejecuta Claude Code o Codex, sigue las sesiones en tiempo real y mantén cada proyecto cerca cuando la app se lance.",
+    "contactCta": "Contáctanos",
     "secondaryCta": "Ver las pantallas nuevas",
     "note": "iPhone, iPad y Android siguen Próximamente. Sin botones falsos de App Store o Play Store hasta tener enlaces reales.",
     "platforms": ["iPhone • Próximamente", "iPadOS • Próximamente", "Android celular • Próximamente"],
@@ -239,6 +240,9 @@
       "pricing": "Precios",
       "downloads": "Descargas",
       "faq": "FAQ"
+    },
+    "contact": {
+      "label": "Contacto"
     },
     "legal": {
       "rights": "© CosmoRemote. Todos los derechos reservados.",
